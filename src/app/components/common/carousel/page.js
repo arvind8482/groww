@@ -11,7 +11,7 @@ const CarouselClients = ({ sliderData }) => {
   const updateSlideWidth = () => {
     if (carouselRef.current && typeof window !== 'undefined') {
       const carouselWidth = carouselRef.current.offsetWidth;
-      const slidesToShow = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 4;
+      const slidesToShow = window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
       setSlideWidth(carouselWidth / slidesToShow);
     }
   };
