@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -7,7 +8,9 @@ function Footer() {
         <footer className='bg-primary py-8 px-6 text-secondary'>
             <div className='container mx-auto flex flex-col xl:flex-row xl:items-center xl:items-stretch'>
                    <div className='w-full xl:w-1/3 border-0 xl:border-e xl:border-light xl:p-6'>
-                           <img src='images/logo-footer.png' className='mb-4' alt='' />
+                   <Image
+  src='/images/logo-footer.png' className='mb-4 w-full' alt='' width={312} height={69}  
+    /> 
                            <div className='border-t border-light border-solid py-4 xl:pb-10 text-default-size'>
                            VisionGroww is a dynamic and innovative IT solutions provider dedicated to delivering top-notch services in web and app design, IT training, consultancy, and master classes
                            </div>
@@ -28,14 +31,24 @@ function Footer() {
                    </div>
                    <div className='w-full xl:w-1/3 p-6 self-center'>
                         <div className='flex justify-center items-center'>
-                        <a href='#' className='me-4'><img src='images/si-facebook.png' alt=''/></a>
-                        <a href='#' className='me-4'><img src='images/si-linkedin.png' alt=''/></a>
-                        <a href='#'><img src='images/si-x.png' alt=''/></a>
+                        <a href='#' className='me-4'>
+                        <Image
+   src='/images/si-facebook.png' alt='' width={45} height={45}
+    />
+                         </a>
+                        <a href='#' className='me-4'>
+                        <Image
+   src='/images/si-linkedin.png' alt='' width={45} height={45}
+    /> </a>
+                        <a href='#'>
+                        <Image
+    src='/images/si-x.png' alt='' width={45} height={45}
+    /> </a>
                         </div>
                    </div>
             </div>
             <div className='container xl:mx-auto  text-center border-t border-light mt-4 pt-6'>
-            Copyright ©  visiongroww.com  2024
+            Copyright © visiongroww.com 2024
             </div>
  </footer>
     </>

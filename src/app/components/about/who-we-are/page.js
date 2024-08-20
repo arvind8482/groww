@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import SectionHeadingTwoLine from '../../common/section-heading-twoline/page'
 
 function WhoWeAre() {
@@ -13,7 +14,10 @@ function WhoWeAre() {
                       </p>
                 </div>
                 <div className='w-full xl:w-1/2'>
-                    <img src='images/img-whoweare.png' className='w-full'  alt='' />
+                <Image
+      src="/images/img-whoweare.png"  className='w-full' 
+      alt=" VisionGroww is a premier digital solutions provider committed to helping businesses achieve their goals through innovative and customized solutions."
+    /> 
                 </div>
             </div>
         </section>

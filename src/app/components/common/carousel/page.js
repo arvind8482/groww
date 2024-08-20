@@ -1,5 +1,6 @@
 'use client'; // Ensure this component is treated as a client component
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image'
 
 const Carousel = ({ sliderData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +56,9 @@ const Carousel = ({ sliderData }) => {
           >
             <div className='bg-white border-2 border-secondary-dark rounded-2xl p-8 mx-2 min-h-tabs-content'>
             <div className="py-6 text-center flex justify-center">
-              <img src={slide.img} alt={slide.title}   />
+            <Image
+     src={slide.img} alt={slide.title}  width={slide.width} height={slide.height}
+    /> 
             </div>
             <div className="min-h-tabs-subheading">
               <h3 className="text-tabs font-semibold text-center">{slide.title}</h3>
@@ -74,7 +77,9 @@ const Carousel = ({ sliderData }) => {
           disabled={currentIndex === 0} 
           className={`me-2 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <img src="images/nav_prev.png" alt="Previous" />
+           <Image
+   src="/images/nav_prev.png" alt="Previous" width={33} height={33}
+    /> 
         </button>
 
         <button 
@@ -82,7 +87,9 @@ const Carousel = ({ sliderData }) => {
           disabled={currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth)} 
           className={`ms-2 ${currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth) ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <img src="images/nav_next.png" alt="Next" />
+            <Image
+ src="/images/nav_next.png" alt="Next"  width={33} height={33}
+    />  
         </button>
       </div>
     </div>

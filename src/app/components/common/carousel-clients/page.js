@@ -1,5 +1,6 @@
 'use client'; // Ensure this component is treated as a client component
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image'
 
 const CarouselClients = ({ sliderData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,7 +56,9 @@ const CarouselClients = ({ sliderData }) => {
           >
             <div className='bg-white border-2 border-secondary-dark rounded-xl p-8 mx-2 flex justify-center items-center min-h-clientbox'>
                    <div>
-                        <img src={slide.img} alt={slide.title}   />
+                   <Image  width={slide.width} height={slide.height}
+             src={slide.img} alt={slide.title}  
+    /> 
                    </div>
             </div>
      
@@ -70,7 +73,9 @@ const CarouselClients = ({ sliderData }) => {
           disabled={currentIndex === 0} 
           className={`me-2 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <img src="images/nav_prev.png" alt="Previous" />
+          <Image
+src="/images/nav_prev.png" alt="Previous"   width={33} height={33}
+    /> 
         </button>
 
         <button 
@@ -78,7 +83,9 @@ const CarouselClients = ({ sliderData }) => {
           disabled={currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth)} 
           className={`ms-2 ${currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth) ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <img src="images/nav_next.png" alt="Next" />
+           <Image
+src="/images/nav_next.png" alt="Next"  width={33} height={33}
+    />  
         </button>
       </div>
     </div>

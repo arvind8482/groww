@@ -4,52 +4,75 @@ import CarouselClients from '../../common/carousel-clients/page'
 
 const clientsData = [
   {
-    img: 'images/client-1.png',
-    title: 'Client Data'
+    img: '/images/client-1.png',
+    title: 'Client Data',
+    width:207,
+    height:70
     },
   {
-    img: 'images/client-2.jpg',
-    title: 'Client Data'
+    img: '/images/client-2.jpg',
+    title: 'Client Data',
+    width:207,
+    height:70
   },
   {
-    img: 'images/client-3.png',
-    title: 'Client Data'
+    img: '/images/client-3.png',
+    title: 'Client Data',
+    width:219,
+    height:45
   },
   {
-    img: 'images/client-4.png',
-    title: 'Client Data'
+    img: '/images/client-4.png',
+    title: 'Client Data',
+    width:147,
+    height:70
     },
     {
-      img: 'images/client-1.png',
-      title: 'Client Data'
+      img: '/images/client-1.png',
+      title: 'Client Data',
+      width:207,
+      height:70
       },
     {
-      img: 'images/client-2.jpg',
-      title: 'Client Data'
+      img: '/images/client-2.jpg',
+      title: 'Client Data',
+      width:207,
+      height:70
     },
     {
-      img: 'images/client-3.png',
-      title: 'Client Data'
+      img: '/images/client-3.png',
+      title: 'Client Data',
+      width:219,
+      height:45
     },
     {
-      img: 'images/client-4.png',
-      title: 'Client Data'
-      },
-      {
-        img: 'images/client-1.png',
-        title: 'Client Data'
+      img: '/images/client-4.png',
+      title: 'Client Data',
+      width:147,
+      height:70
+      },  {
+        img: '/images/client-1.png',
+        title: 'Client Data',
+        width:207,
+        height:70
         },
       {
-        img: 'images/client-2.jpg',
-        title: 'Client Data'
+        img: '/images/client-2.jpg',
+        title: 'Client Data',
+        width:207,
+        height:70
       },
       {
-        img: 'images/client-3.png',
-        title: 'Client Data'
+        img: '/images/client-3.png',
+        title: 'Client Data',
+        width:219,
+        height:45
       },
       {
-        img: 'images/client-4.png',
-        title: 'Client Data'
+        img: '/images/client-4.png',
+        title: 'Client Data',
+        width:147,
+        height:70
         },
 ];
 

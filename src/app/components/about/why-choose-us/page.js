@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import SectionHeadingTwoLine from '../../common/section-heading-twoline/page'
 
 function WhyChooseUs() {
@@ -7,7 +8,10 @@ function WhyChooseUs() {
             <section className='py-20 bg-white'>
             <div className='container px-6 xl:px-0  mx-auto flex flex-col xl:flex-row xl:items-center'>
             <div className='w-full xl:w-1/2'>
-                        <img src='images/img-whatwedo.png' className='w-full'  alt='' />
+            <Image
+      src="/images/img-whatwedo.png"  className='w-full' 
+      alt=" At VisionGroww, we are dedicated to helping your vision grow."
+    />  
                     </div>
                 <div className='w-full xl:w-1/2'>
             

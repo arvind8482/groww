@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Button from '../../common/button/page'
 function Welcome() {
   return (
@@ -17,7 +18,9 @@ function Welcome() {
                             </div>
                         </div>
                         <div className='w-full xl:w-1/2'>
-                            <img src='images/img-welcome.jpg' className='w-full mt-8 xl:mt-0' alt='' />
+                        <Image
+ src='/images/img-welcome.jpg' className='w-full mt-8 xl:mt-0' alt=''  width={693} height={439}
+    /> 
                         </div>
                 </div>
         </section>

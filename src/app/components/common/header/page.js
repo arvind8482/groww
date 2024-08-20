@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   Dialog,
   DialogPanel,
@@ -42,7 +43,9 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="Your Company" src="images/logo.png"  />
+            <Image
+      alt="Visiongroww" src="/images/logo.png"  width={312}  height={69}
+    /> 
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -102,10 +105,11 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt="Your Company"
-                src="images/logo.png" 
-              />
+              <Image
+   alt="Visiongroww "
+   src="/images/logo.png"   width={312}  height={69}
+    />      
+             
             </a>
             <button
               type="button"
