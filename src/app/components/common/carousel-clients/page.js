@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const CarouselClients = ({ sliderData }) => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
   const [slideWidth, setSlideWidth] = useState(0);
