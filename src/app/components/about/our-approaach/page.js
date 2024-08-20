@@ -22,7 +22,7 @@ function OurApproach() {
                 </div>
                 <div className='w-full xl:w-1/2'>
                 <Image
-      src="/images/img-ourapproach.png"  className='w-full'
+      src="/images/img-ourapproach.png"  className='w-full' width={621} height={573}
       alt="At VisionGroww, our client-centered approach ensures we thoroughly understand your needs and objectives from the very beginning."
     /> 
  

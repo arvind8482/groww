@@ -41,12 +41,12 @@ export default function Header() {
     <header className="bg-secondary px-6">
       <nav aria-label="Global" className="mx-auto container flex  items-center justify-between py-6  bg-secondary">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image
       alt="Visiongroww" src="/images/logo.png"  width={312}  height={69}
     /> 
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -103,14 +103,14 @@ export default function Header() {
         <div className="fixed inset-0 z-10 " />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6   sm:ring-1 sm:ring-gray-900/10 bg-secondary">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
    alt="Visiongroww "
    src="/images/logo.png"   width={312}  height={69}
     />      
              
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}

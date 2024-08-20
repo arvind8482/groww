@@ -15,7 +15,7 @@ function WhoWeAre() {
                 </div>
                 <div className='w-full xl:w-1/2'>
                 <Image
-      src="/images/img-whoweare.png"  className='w-full' 
+      src="/images/img-whoweare.png"  className='w-full' width={603} height={412}
       alt=" VisionGroww is a premier digital solutions provider committed to helping businesses achieve their goals through innovative and customized solutions."
     /> 
                 </div>

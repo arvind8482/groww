@@ -1,7 +1,7 @@
 'use client'; // Ensure this component is treated as a client component
 import React, { useState } from 'react';
 import SectionHeading from '../../common/section-heading/page';
-import Carousel from '../../common/carousel/page';
+ 
 
 const sliderData = [
   {
@@ -72,7 +72,7 @@ function WhyVisionGroww() {
       <section className='py-12 bg-white'>
         <div className='container mx-auto'>
           <SectionHeading subheading="Why Choose" heading="VisionGroww?" align="text-center" line="mx-auto" /> 
-          <Carousel  sliderData={sliderData} />
+    
          
         </div>
       </section>

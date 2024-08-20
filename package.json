@@ -1,5 +1,5 @@
 {
-  "name": "my-next-app",
+  "name": "Vision Groww",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.18.0",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
     "autoprefixer": "^10.4.20",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18"
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
