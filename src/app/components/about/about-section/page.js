@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import SectionHeading from '../../common/section-heading/page'
+
 function AboutSection() {
   return (
     <>
@@ -8,8 +9,10 @@ function AboutSection() {
            <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6'>
                <div className='w-full xl:w-1/2'>
                <Image
-      src="/images/img-about.png"  className='w-full mb-6 xl:mb-0' width={619} height={368}
-      alt=" Welcome to VisionGroww"
+      src="/images/img-about.png"
+      width={619}
+      height={368}
+      alt=""
     /> 
                </div>
                <div className='w-full xl:w-1/2'>

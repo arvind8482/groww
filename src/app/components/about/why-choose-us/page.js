@@ -9,9 +9,10 @@ function WhyChooseUs() {
             <div className='container px-6 xl:px-0  mx-auto flex flex-col xl:flex-row xl:items-center'>
             <div className='w-full xl:w-1/2'>
             <Image
-      src="/images/img-whatwedo.png"  className='w-full' 
-      alt=" At VisionGroww, we are dedicated to helping your vision grow."
-    />  
+      src="/images/img-whatwedo.png"  className='w-full'  alt=''
+      width={618}
+      height={644} 
+    /> 
                     </div>
                 <div className='w-full xl:w-1/2'>
             

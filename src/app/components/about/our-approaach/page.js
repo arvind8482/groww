@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeadingTwoLine from '../../common/section-heading-twoline/page'
 import Image from 'next/image'
+import SectionHeadingTwoLine from '../../common/section-heading-twoline/page'
 function OurApproach() {
   return (
      <>
@@ -22,10 +22,10 @@ function OurApproach() {
                 </div>
                 <div className='w-full xl:w-1/2'>
                 <Image
-      src="/images/img-ourapproach.png"  className='w-full' width={621} height={573}
-      alt="At VisionGroww, our client-centered approach ensures we thoroughly understand your needs and objectives from the very beginning."
+src='/images/img-ourapproach.png' className='w-full' alt=''
+      width={621}
+      height={573} 
     /> 
- 
                 </div>
             </div>
         </section>

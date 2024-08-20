@@ -9,7 +9,7 @@ function FooterTopBox() {
                        <div className='flex flex-col xl:flex-row items-center justify-center'>
                                 <div className='flex items-center w-full xl:w-5/12 border-0 xl:border-e xl:border-light-black p-8'>
                                 <Image
-   src='/images/icon-call.png' alt='' className='mx-6' 
+   src='/images/icon-call.png' alt='' className='mx-6'  width={63} height={63}
     /> 
                                     <div>
                                     <span className='text-xl'> Call For More Info</span>
