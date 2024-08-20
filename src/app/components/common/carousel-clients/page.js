@@ -129,10 +129,10 @@ function CarouselClients() {
         ))}
       </div>
       <div className="flex justify-center pt-6">
-        <button onClick={goToPrev} disabled={currentIndex === 0} className={`me-2 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}>
+        <button onClick={goToPrev}   className={`me-2 ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}>
           <Image src="/images/nav_prev.png" alt="Previous" width={33} height={33} />
         </button>
-        <button onClick={goToNext} disabled={currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth)} className={`ms-2 ${currentIndex >= sliderData.length - Math.ceil(window.innerWidth / slideWidth) ? 'opacity-50 cursor-not-allowed' : ''}`}>
+        <button onClick={goToNext}   className={`ms-2 ${currentIndex >= sliderData.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}>
           <Image src="/images/nav_next.png" alt="Next" width={33} height={33} />
         </button>
       </div>
