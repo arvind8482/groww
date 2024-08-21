@@ -25,6 +25,8 @@ const config: Config = {
         'tabs-content': '446px',
         'tabs-subheading': '84px',
         'clientbox': '160px',
+        'roadmapheading-area': '120px',
+        'roadmap': '770px',
       },
       spacing: {
         'services': '32%',
@@ -35,10 +37,25 @@ const config: Config = {
           letterSpacing: '-0.01em',
           fontWeight: '500',
         }],
+        'roadmap-heading':  ['24px', {
+          lineHeight: '38px',
+          letterSpacing: '-0.01em',
+          fontWeight: '600', 
+        }],
+        'roadmap-subheading':  ['16px', {
+          lineHeight: '28px',
+          letterSpacing: '-0.01em',
+          fontWeight: '500',
+        }],
         'tabs': ['24px', {
           lineHeight: '38px',
           letterSpacing: '-0.01em',
           fontWeight: '500', 
+        }],
+        'servicedubheading': ['24px', {
+          lineHeight: '38px',
+          letterSpacing: '-0.01em',
+          fontWeight: '600', 
         }],
         'contact-box-footer': ['39px', {
           lineHeight: '54px',
