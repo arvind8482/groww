@@ -30,9 +30,7 @@ const services = [
   { name: 'IT Training',  href: '/it-training', icon: FingerPrintIcon },
   { name: 'IT Consulting',   href: '/it-consulting', icon: SquaresPlusIcon },
   { name: 'Master Classes',  href: '/master-classes', icon: ArrowPathIcon },
-];
-
- 
+]; 
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -92,7 +90,7 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <Link href="/about" className="text-xl font-semibold leading-6 text-primary" >About Us</Link> 
+          <Link href="/about" className="text-xl font-semibold leading-6 text-primary" ><span>About Us</span></Link> 
           <Link href="/blog" className="text-xl font-semibold leading-6 text-primary" >Blog</Link>  
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">

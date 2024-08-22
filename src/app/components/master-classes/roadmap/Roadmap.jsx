@@ -1,8 +1,8 @@
 'use client'; // Ensure this component is treated as a client component
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
-import SectionHeading from '../../common/section-heading/page';
-import RoadmapAppDesign from '../../common/roadmap-app-design/page'
+import SectionHeading from '../../common/section-heading/SectionHeading';
+import RoadmapAppDesign from '../../common/roadmap-app-design/RoadmapAppDesign'
 
 const roaadmapData = [
   {

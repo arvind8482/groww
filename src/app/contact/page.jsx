@@ -6,7 +6,7 @@ import SectionHeading from '../components/common/section-heading/SectionHeading'
 import SectionHeadingTwoLine from '../components/common/section-heading-twoline/SectionHeadingTwoLine'
 import ContactForm from '../components/contact/contact-form/ContactForm' 
 
-function Contact() { 
+function Page() { 
  
   return (
     <>  
@@ -73,4 +73,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Page

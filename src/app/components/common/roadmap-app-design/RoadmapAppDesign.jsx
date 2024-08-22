@@ -1,5 +1,4 @@
-'use client'; // Ensure this component is treated as a client component
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
 const RoadmapAppDesign = ({ roaadmapData = [] }) => {
@@ -9,13 +8,13 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
   const carouselRef = useRef(null);
 
   // Function to update slide width based on the current window width
-  const updateSlideWidth = () => {
+  const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
       const carouselWidth = carouselRef.current.offsetWidth;
       const slidesToShow = windowWidth < 768 ? 1 : windowWidth < 1024 ? 2 : 3;
       setSlideWidth(carouselWidth / slidesToShow);
     }
-  };
+  }, [windowWidth]);
 
   // Effect to handle window resizing and initial setup
   useEffect(() => {
@@ -28,7 +27,7 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [windowWidth]);
+  }, [updateSlideWidth]);
 
   // Function to go to the next slide
   const goToNext = () => {

@@ -6,7 +6,7 @@ import Roadmap from '../components/webdesign/roadmap/Roadmap'
 import FooterTopBox from '../components/common/footer-top-box/FooterTopBox' 
 
 
-function WebDesign() {
+function Page() {
   return (
     <>  
             <WhatWebDesign/>
@@ -17,4 +17,4 @@ function WebDesign() {
   )
 }
 
-export default WebDesign
+export default Page

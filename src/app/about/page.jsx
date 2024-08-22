@@ -7,7 +7,7 @@ import OurApproach from '../components/about/our-approaach/OurApproach'
 import WhyChooseUs from '../components/about/why-choose-us/WhyChooseUs'
 import FooterTopBox from '../components/common/footer-top-box/FooterTopBox' 
 
-function About() {
+function Page() {
   return (
     <>  
             <AboutSection/>
@@ -20,4 +20,4 @@ function About() {
   )
 }
 
-export default About
+export default Page

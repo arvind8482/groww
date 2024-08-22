@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Image from 'next/image'
-import SectionHeading from '../../common/section-heading/page'
+import SectionHeading from '../../common/section-heading/SectionHeading'
 
 function AboutSection() {
   return (

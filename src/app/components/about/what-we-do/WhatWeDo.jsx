@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Image from 'next/image'
-import SectionHeadingTwoLine from '../../common/section-heading-twoline/page'
+import SectionHeadingTwoLine from '../../common/section-heading-twoline/SectionHeadingTwoLine'
 function WhatWeDo() {
   return (
     <>
