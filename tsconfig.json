@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/header/page.js", "src/app/page.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/header/page.js", "src/app/page.jsx", "src/app/components/common/carousel-clients/page.tsx", "src/app/components/common/carousel-clients/page.jsx", "src/app/layout.tsx"],
   "exclude": ["node_modules"]
 }
