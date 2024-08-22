@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import SectionHeading from '../../common/section-heading/SectionHeading';
-import RoadmapAppDesign from '../../common/roadmap-app-design/RoadmapAppDesign'
+import RoadmapItTraining from '../../common/roadmap-it-training/RoadmapItTraining'
 
 const roaadmapData = [
   {
@@ -106,7 +106,7 @@ const roaadmapData = [
     img: '/images/roadmap-line.png',
     title: 'Training Support & Resources', 
     subtitle: 'Phase 05', 
-    percentage:90, 
+    percentage:100, 
     content: [
       {
         strong:`Description`,
@@ -136,7 +136,7 @@ function Roadmap() {
       <section className='py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
           <SectionHeading subheading="IT Training" heading="Services" align="text-center" line="mx-auto" /> 
-          <RoadmapAppDesign roaadmapData={roaadmapData} /> 
+          <RoadmapItTraining roaadmapData={roaadmapData} /> 
           <p className='text-default py-6 text-primary text-center '>
           This streamlined roadmap ensures that each aspect of the IT training process is
 comprehensively covered, from initial consultation to ongoing support. Visiongroww is

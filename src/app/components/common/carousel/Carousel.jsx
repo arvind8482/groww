@@ -19,7 +19,7 @@ const Carousel = ({ carouselData  = [] }) => {
 
   // Function to update the window width state
   const updateWindowWidth = useCallback(() => {
-    setWindowWidth(window.innerWidth);
+    setWindowWidth(window.outerWidth);
   }, []);
 
   useEffect(() => {
@@ -36,23 +36,32 @@ const Carousel = ({ carouselData  = [] }) => {
       window.removeEventListener('resize', updateWindowWidth);
       window.removeEventListener('resize', updateSlideWidth);
     };
-  }, [updateWindowWidth, updateSlideWidth]); // Include both updateWindowWidth and updateSlideWidth
+  }, [updateWindowWidth, updateSlideWidth]);
 
   const goToNext = () => {
-    setCurrentIndex(prevIndex => {
-      const maxIndex = carouselData.length - Math.ceil(windowWidth / slideWidth);
-      return prevIndex === maxIndex ? 0 : prevIndex + 1;
+    setCurrentIndex(prevIndex => { 
+      const maxIndex = Math.max(0, carouselData.length - 2);
+      console.log(maxIndex)
+      // Move to the next index, or wrap around if at the end
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };
 
   const goToPrev = () => {
     setCurrentIndex(prevIndex => {
-      const newIndex = prevIndex === 0 ? carouselData.length - Math.ceil(windowWidth / slideWidth) : prevIndex - 1;
-      return newIndex;
+      // Calculate the maximum index considering the total number of slides and the width of slides visible
+      const slidesToShow = Math.ceil(windowWidth / slideWidth);
+      const maxIndex = Math.max(0, carouselData.length - slidesToShow);
+      
+      // Move to the previous index, or wrap around if at the beginning
+      return prevIndex <= 0 ? maxIndex : prevIndex - 1;
     });
   };
 
-  const isNextDisabled = currentIndex >= carouselData.length - Math.ceil(windowWidth / slideWidth);
+  const slidesToShow = Math.ceil(windowWidth / slideWidth);
+  const maxIndex = Math.max(0, carouselData.length - slidesToShow);
+
+  const isNextDisabled = currentIndex >= 5;
   const isPrevDisabled = currentIndex === 0;
 
   return (

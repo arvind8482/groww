@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
-const RoadmapAppDesign = ({ roaadmapData = [] }) => {
+const RoadmapItTraining = ({ roaadmapData = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
@@ -48,7 +48,7 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
   };
 
   // Calculate if the next button should be disabled
-  const isNextDisabled = currentIndex >= 3;
+  const isNextDisabled = currentIndex >= 2;
   // Calculate if the previous button should be disabled
   const isPrevDisabled = currentIndex === 0;
 
@@ -122,4 +122,4 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
   );
 };
 
-export default RoadmapAppDesign;
+export default RoadmapItTraining;

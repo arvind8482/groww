@@ -27,6 +27,7 @@ const config: Config = {
         'clientbox': '160px',
         'roadmapheading-area': '120px',
         'roadmap': '770px',
+        'roadmapApp': '720px'
       },
       spacing: {
         'services': '32%',

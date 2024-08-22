@@ -32,6 +32,7 @@ const CarouselClients = ({ carousalData }) => {
   const goToNext = () => {
     setCurrentIndex((prevIndex) => {
       const maxIndex = carousalData.length - Math.ceil(windowWidth / slideWidth);
+      console.log(maxIndex)
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };
@@ -39,6 +40,7 @@ const CarouselClients = ({ carousalData }) => {
   const goToPrev = () => {
     setCurrentIndex((prevIndex) => {
       const maxIndex = carousalData.length - Math.ceil(windowWidth / slideWidth);
+
       return prevIndex === 0 ? maxIndex : prevIndex - 1;
     });
   };

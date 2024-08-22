@@ -32,8 +32,10 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
 
   // Function to go to the next slide
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => {
-      const maxIndex = roaadmapData.length - Math.ceil(windowWidth / slideWidth);
+    setCurrentIndex(prevIndex => { 
+      const maxIndex = Math.max(0, roaadmapData.length - 2);
+      console.log(maxIndex)
+      // Move to the next index, or wrap around if at the end
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };
@@ -46,7 +48,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
     });
   };
 
-  const isNextDisabled = currentIndex >= roaadmapData.length - Math.ceil(windowWidth / slideWidth);
+  const isNextDisabled = currentIndex >= 3
   const isPrevDisabled = currentIndex === 0;
 
   return (

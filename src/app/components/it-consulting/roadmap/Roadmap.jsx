@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import SectionHeading from '../../common/section-heading/SectionHeading';
-import RoadmapAppDesign from '../../common/roadmap-app-design/RoadmapAppDesign'
+import RoadmapItTraining from '../../common/roadmap-it-training/RoadmapItTraining'
 
 const roaadmapData = [
   {
@@ -138,7 +138,7 @@ function Roadmap() {
       <section className='py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
           <SectionHeading subheading="IT Training" heading="Services" align="text-center" line="mx-auto" /> 
-          <RoadmapAppDesign roaadmapData={roaadmapData} /> 
+          <RoadmapItTraining roaadmapData={roaadmapData} /> 
           <p className='text-default py-6 text-primary text-center '>
           This roadmap ensures a structured approach to IT consultancy services, from initial consultation
 through to post-implementation support. Visiongroww is committed to delivering expert guidance
