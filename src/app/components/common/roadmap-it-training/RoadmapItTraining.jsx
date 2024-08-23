@@ -32,7 +32,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
   // Function to go to the next slide
   const goToNext = () => {
     setCurrentIndex(prevIndex => { 
-      const maxIndex = Math.max(0, roaadmapData.length - 2);
+      const maxIndex = windowWidth > 1023 ?  Math.max(0, roaadmapData.length - 2) : roaadmapData.length-1
       console.log(maxIndex)
       // Move to the next index, or wrap around if at the end
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
@@ -48,7 +48,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
   };
 
   // Calculate if the next button should be disabled
-  const isNextDisabled = currentIndex >= 2;
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 2 : currentIndex >= 4; 
   // Calculate if the previous button should be disabled
   const isPrevDisabled = currentIndex === 0;
 
@@ -56,7 +56,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     <div className="relative w-full overflow-hidden" ref={carouselRef}>
       {/* Carousel Content */}
       <div
-        className="flex space-x-6 xl:space-x-0 transition-transform duration-500 ease-in-out"
+        className="flex xl:space-x-6 xl:space-x-0 transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * slideWidth}px)`,
         }}
@@ -68,7 +68,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
               className="flex-shrink-0"
               style={{ width: `${slideWidth}px` }}
             >
-              <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-roadmapApp'>
+              <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-roadmap'>
                 <div className="p-6 flex flex-col justify-center">
                   <div className='min-h-roadmapheading-area'>
                     <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>

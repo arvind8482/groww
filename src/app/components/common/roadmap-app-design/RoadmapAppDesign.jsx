@@ -48,7 +48,8 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
   };
 
   // Calculate if the next button should be disabled
-  const isNextDisabled = currentIndex >= 3;
+  
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 3 : currentIndex >= roaadmapData.length - Math.ceil(windowWidth / slideWidth);
   // Calculate if the previous button should be disabled
   const isPrevDisabled = currentIndex === 0;
 

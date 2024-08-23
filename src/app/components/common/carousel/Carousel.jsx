@@ -40,7 +40,7 @@ const Carousel = ({ carouselData  = [] }) => {
 
   const goToNext = () => {
     setCurrentIndex(prevIndex => { 
-      const maxIndex = Math.max(0, carouselData.length - 2);
+      const maxIndex = windowWidth > 1023 ? Math.max(0, carouselData.length - 2) :Math.max(0, carouselData.length)
       console.log(maxIndex)
       // Move to the next index, or wrap around if at the end
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
@@ -60,8 +60,8 @@ const Carousel = ({ carouselData  = [] }) => {
 
   const slidesToShow = Math.ceil(windowWidth / slideWidth);
   const maxIndex = Math.max(0, carouselData.length - slidesToShow);
-
-  const isNextDisabled = currentIndex >= 5;
+  
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 5 : currentIndex >= maxIndex; 
   const isPrevDisabled = currentIndex === 0;
 
   return (

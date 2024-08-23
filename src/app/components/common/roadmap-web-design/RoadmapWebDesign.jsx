@@ -33,7 +33,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
   // Function to go to the next slide
   const goToNext = () => {
     setCurrentIndex(prevIndex => { 
-      const maxIndex = Math.max(0, roaadmapData.length - 2);
+      const maxIndex = windowWidth > 1023 ?  Math.max(0, roaadmapData.length - 2) : roaadmapData.length
       console.log(maxIndex)
       // Move to the next index, or wrap around if at the end
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
@@ -47,15 +47,14 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
       return prevIndex === 0 ? maxIndex : prevIndex - 1;
     });
   };
-
-  const isNextDisabled = currentIndex >= 3
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 3 : currentIndex >= 5;  
   const isPrevDisabled = currentIndex === 0;
 
   return (
     <div className="relative w-full overflow-hidden" ref={carouselRef}>
       {/* Carousel Content */}
       <div
-        className="flex space-x-6 transition-transform duration-500 ease-in-out"
+        className="flex xl:space-x-6 transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * slideWidth}px)`,
         }}
@@ -63,8 +62,8 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
         {roaadmapData.map((slide, index) => (
           <div
             key={index}
-            className="flex-shrink-0"
-            style={{ width: `${32}%` }}
+            className="flex-shrink-0 w-full xl:w-[32%]"
+          
           >
             <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-tabs-content'>
               <div className="p-6 flex flex-col justify-center">

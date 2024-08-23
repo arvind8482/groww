@@ -31,7 +31,7 @@ const CarouselClients = ({ carousalData }) => {
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => {
-      const maxIndex = carousalData.length - Math.ceil(windowWidth / slideWidth);
+      const maxIndex = windowWidth > 1023 ? carousalData.length  :carousalData.length - Math.ceil(windowWidth / slideWidth)
       console.log(maxIndex)
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
@@ -43,9 +43,9 @@ const CarouselClients = ({ carousalData }) => {
 
       return prevIndex === 0 ? maxIndex : prevIndex - 1;
     });
-  };
+  }; 
 
-  const isNextDisabled = currentIndex >= carousalData.length - Math.ceil(windowWidth / slideWidth);
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 8 : currentIndex >= carousalData.length - Math.ceil(windowWidth / slideWidth); 
   const isPrevDisabled = currentIndex === 0;
 
   return (
