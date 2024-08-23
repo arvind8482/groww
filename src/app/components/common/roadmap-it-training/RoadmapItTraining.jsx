@@ -56,7 +56,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     <div className="relative w-full overflow-hidden" ref={carouselRef}>
       {/* Carousel Content */}
       <div
-        className="flex xl:space-x-6 xl:space-x-0 transition-transform duration-500 ease-in-out"
+        className="flex  transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * slideWidth}px)`,
         }}
@@ -68,7 +68,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
               className="flex-shrink-0"
               style={{ width: `${slideWidth}px` }}
             >
-              <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-roadmap'>
+              <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-roadmapsmall xl:min-h-roadmap'>
                 <div className="p-6 flex flex-col justify-center">
                   <div className='min-h-roadmapheading-area'>
                     <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>
