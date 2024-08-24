@@ -54,7 +54,7 @@ const WhatWeDo = () => {
                 <strong>App Design (Android/iOS) :</strong> We design intuitive app interfaces and distinctive logos, prioritizing exceptional user experiences. Our app designs also include three months of maintenance for optimal performance.
               </li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
-                <strong>IT Training :</strong> Our specialized training programs cover Cloud & DevOps (AWS, Azure, GCP), Web Development, AI/ML, and IoT, helping you master essential skills for today's tech landscape.
+                <strong>IT Training :</strong> Our specialized training programs cover Cloud & DevOps (AWS, Azure, GCP), Web Development, AI/ML, and IoT, helping you master essential skills for today&apos;s tech landscape.
               </li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>IT Consultancy :</strong> We provide expert guidance on Cloud Integration, Cloud Migration, DevOps implementation, and web development, ensuring your projects achieve maximum efficiency and success.
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
               </li>
             </ul>
             <p className='text-default-size pt-8 px-6 text-center'>
-              At VisionGroww, we&apos;re dedicated to turning your vision into reality with our commitment to excellence and innovation. Let's build something amazing together!
+              At VisionGroww, we&apos;re dedicated to turning your vision into reality with our commitment to excellence and innovation. Let&apos;s build something amazing together!
             </p>
           </motion.div>
         </div>
