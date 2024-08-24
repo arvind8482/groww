@@ -1,10 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next"; 
 import Header from './components/common/header/Header'; // Ensure this path is correct
 import Footer from './components/common/footer/Footer';
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css"; 
 
 export const metadata: Metadata = {
   title: "Vision Groww",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body  >
       <Header />
         {children}
         <Footer /> 
