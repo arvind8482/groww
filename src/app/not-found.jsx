@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link' 
-import _404 from './components/_animated/_404' 
+import Link from 'next/link'  
 function NotFound() {
   return (
      <> 
