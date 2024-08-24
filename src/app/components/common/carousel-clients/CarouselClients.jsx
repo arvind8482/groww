@@ -7,6 +7,7 @@ const CarouselClients = ({ carousalData }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const [slideWidth, setSlideWidth] = useState(300);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const carouselRef = useRef(null);
 
   const updateSlideWidth = useCallback(() => {
@@ -29,23 +30,36 @@ const CarouselClients = ({ carousalData }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [updateSlideWidth]);
 
+  useEffect(() => {
+    if (isAutoScrolling) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => {
+          const maxIndex = windowWidth > 1023 ? 8 : carousalData.length - Math.ceil(windowWidth / slideWidth);
+          return prevIndex >= maxIndex - 1 ? 0 : prevIndex + 1;
+        });
+      }, 3000); // Change slide every 3 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [isAutoScrolling, currentIndex, windowWidth, slideWidth, carousalData.length]);
+
   const goToNext = () => {
+    setIsAutoScrolling(false);
     setCurrentIndex((prevIndex) => {
-      const maxIndex = windowWidth > 1023 ? carousalData.length  :carousalData.length - Math.ceil(windowWidth / slideWidth)
-      console.log(maxIndex)
-      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
+      const maxIndex = windowWidth > 1023 ? carousalData.length : carousalData.length - Math.ceil(windowWidth / slideWidth);
+      return prevIndex >= maxIndex - 1 ? 0 : prevIndex + 1;
     });
   };
 
   const goToPrev = () => {
+    setIsAutoScrolling(false);
     setCurrentIndex((prevIndex) => {
       const maxIndex = carousalData.length - Math.ceil(windowWidth / slideWidth);
-
-      return prevIndex === 0 ? maxIndex : prevIndex - 1;
+      return prevIndex === 0 ? maxIndex - 1 : prevIndex - 1;
     });
-  }; 
+  };
 
-  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 8 : currentIndex >= carousalData.length - Math.ceil(windowWidth / slideWidth); 
+  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 8 : currentIndex >= carousalData.length - Math.ceil(windowWidth / slideWidth);
   const isPrevDisabled = currentIndex === 0;
 
   return (
@@ -62,7 +76,7 @@ const CarouselClients = ({ carousalData }) => {
             className="flex-shrink-0"
             style={{ width: `${slideWidth}px` }}
           >
-            <div className='bg-white border-2 border-secondary-dark rounded-xl p-8 mx-2 flex justify-center items-center min-h-clientbox'>
+            <div className='bg-white border-2 border-secondary-dark rounded-xl p-8 mx-2 flex justify-center hover:scale-90 transition ease-in-out items-center min-h-clientbox'>
               <Image src={slide.img} alt={slide.title} width={slide.width} height={slide.height} />
             </div>
           </div>
