@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'  
+import Link from 'next/link' 
+import _404 from './components/_animated/_404' 
 function NotFound() {
   return (
      <> 
          <section className='py-6'>
-             <div className='container mx-auto text-center'>
+             <div className='container mx-auto text-center'> 
              <Image priority
    src='/images/img-404.png' className='w-full xl:w-1/3 mx-auto' alt='Page Not Found' width={1002} height={992} 
     /> 
