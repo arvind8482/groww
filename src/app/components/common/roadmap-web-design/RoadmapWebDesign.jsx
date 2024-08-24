@@ -54,7 +54,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
     <div className="relative w-full overflow-hidden" ref={carouselRef}>
       {/* Carousel Content */}
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex xl:space-x-6 transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * slideWidth}px)`,
         }}
@@ -65,7 +65,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
             className="flex-shrink-0 w-full xl:w-[32%]"
           
           >
-            <div className='bg-white shadow-md rounded-2xl p-6  xl:p-8 mx-1 xl:mx-2 min-h-roadmap xl:min-h-tabs-content'>
+            <div className='bg-white hover:bg-secondary hover:border-2 hover:border-secondary-dark transition ease-in-out hover:shadow-none shadow-md rounded-2xl p-6  xl:p-8 mx-1 xl:mx-2 min-h-roadmap xl:min-h-tabs-content'>
               <div className="flex flex-col xl:p-6  justify-center">
                 <div className='min-h-roadmapheading-area'>
                   <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>
