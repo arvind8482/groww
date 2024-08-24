@@ -78,7 +78,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
             <div
               key={index}
                className="flex-shrink-0 w-full xl:w-[32%]">
-              <div className='bg-white  hover:bg-secondary hover:border-2 hover:border-secondary-dark transition ease-in-out hover:shadow-none shadow-md rounded-2xl p-3 xl:p-8  xl:mx-2 min-h-roadmapsmall xl:min-h-roadmap'>
+              <div className='bg-white  hover:bg-secondary border-2  border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-3 xl:p-8  xl:mx-2 min-h-masterclasses  '>
               <div className="flex flex-col xl:p-6  justify-center">
                   <div className='min-h-roadmapheading-area'>
                     <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>

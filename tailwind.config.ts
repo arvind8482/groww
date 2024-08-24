@@ -43,6 +43,7 @@ const config: Config = {
         'roadmapheading-area': '120px',
         'roadmap': '770px',
         'roadmapsmall': '860px',
+        'masterclasses': '800px',
         'roadmapApp': '720px'
       },
       spacing: {
