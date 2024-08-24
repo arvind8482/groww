@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
@@ -6,6 +7,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
   const carouselRef = useRef(null);
+  const autoScrollIntervalRef = useRef(null);
 
   // Function to update slide width based on the current window width
   const updateSlideWidth = useCallback(() => {
@@ -29,12 +31,22 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [updateSlideWidth]);
 
+  // Auto-scroll logic
+  useEffect(() => {
+    autoScrollIntervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const maxIndex = windowWidth > 1023 ? 2 : 4;
+        return prevIndex >= maxIndex ? 0 : prevIndex + 1;
+      });
+    }, 3000); // Auto-scroll every 3 seconds
+
+    return () => clearInterval(autoScrollIntervalRef.current); // Cleanup interval on unmount
+  }, [windowWidth]);
+
   // Function to go to the next slide
   const goToNext = () => {
-    setCurrentIndex(prevIndex => { 
-      const maxIndex = windowWidth > 1023 ?  Math.max(0, roaadmapData.length - 2) : roaadmapData.length-1
-      console.log(maxIndex)
-      // Move to the next index, or wrap around if at the end
+    setCurrentIndex((prevIndex) => { 
+      const maxIndex = windowWidth > 1023 ? 2 : 4;
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };

@@ -7,6 +7,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
   const [slideWidth, setSlideWidth] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
   const carouselRef = useRef(null);
+  const autoScrollIntervalRef = useRef(null);
 
   useEffect(() => {
     // Function to update the slide width
@@ -33,9 +34,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
   // Function to go to the next slide
   const goToNext = () => {
     setCurrentIndex(prevIndex => { 
-      const maxIndex = windowWidth > 1023 ?  Math.max(0, roaadmapData.length - 2) : roaadmapData.length
-      console.log(maxIndex)
-      // Move to the next index, or wrap around if at the end
+      const maxIndex = windowWidth > 1023 ?  Math.max(0, roaadmapData.length - 2) : roaadmapData.length;
       return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };
@@ -47,6 +46,19 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
       return prevIndex === 0 ? maxIndex : prevIndex - 1;
     });
   };
+
+  useEffect(() => {
+    // Auto-scroll logic
+    autoScrollIntervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const maxIndex = windowWidth > 1023 ? 3 : 5;
+        return prevIndex >= maxIndex ? 0 : prevIndex + 1;
+      });
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(autoScrollIntervalRef.current); // Cleanup interval on unmount
+  }, [windowWidth]);
+
   const isNextDisabled = windowWidth > 1023 ? currentIndex >= 3 : currentIndex >= 5;  
   const isPrevDisabled = currentIndex === 0;
 
@@ -63,7 +75,6 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
           <div
             key={index}
             className="flex-shrink-0 w-full xl:w-[32%]"
-          
           >
             <div className='bg-white hover:bg-secondary hover:border-2 hover:border-secondary-dark transition ease-in-out hover:shadow-none shadow-md rounded-2xl p-6  xl:p-8 mx-1 xl:mx-2 min-h-roadmap xl:min-h-tabs-content'>
               <div className="flex flex-col xl:p-6  justify-center">
