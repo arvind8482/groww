@@ -193,7 +193,7 @@ function Services() {
         </div>
         <div className="flex flex-col  px-6 xl:px-0 xl:flex-row xl:space-x-6 justify-center">
           {tabsData[activeTabIndex].subcontent.map((item, idx) => (
-            <div key={idx} className='p-8 bg-white mb-6 rounded-2xl  hover:border-2 hover:border-secondary-dark transition ease-in-out w-full xl:w-1/4 min-h-tabs-content'>
+            <div key={idx} className='p-8 bg-white mb-6 rounded-2xl hover:bg-secondary hover:border-2 hover:border-secondary-dark transition ease-in-out w-full xl:w-1/4 min-h-tabs-content'>
              
               <div className='py-6 text-center'>
               <Image
