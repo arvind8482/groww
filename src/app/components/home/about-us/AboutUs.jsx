@@ -18,7 +18,7 @@ const fadeInLeft = {
 function AboutUs() {
   return (
     <>
-      <section className='py-20 px-8 xl:px-0 bg-secondary'>
+      <section className='py-20 px-8 xl:px-0 bg-secondary overflow-hidden'>
         <div className='container mx-auto flex flex-col xl:flex-row xl:space-x-6'>
           <motion.div className='w-full xl:w-1/2' initial="hidden" whileInView="visible" variants={fadeInRight} viewport={{ once: true }}>
             <Image
