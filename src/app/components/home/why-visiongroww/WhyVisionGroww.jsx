@@ -65,7 +65,7 @@ import SectionHeading from '../../common/section-heading/SectionHeading';
 function WhyVisionGroww() { 
   return (
     <>
-      <section className='py-12 bg-white'>
+      <section className='py-12 bg-white overflow-hidden'>
         <div className='container mx-auto'>
           <SectionHeading subheading="Why Choose" heading="VisionGroww?" align="text-center" line="mx-auto" /> 
           <Carousel  carouselData={carouselData} /> 

@@ -66,11 +66,10 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
           roaadmapData.map((slide, index) => (
             <div
               key={index}
-              className="flex-shrink-0"
-              style={{ width: `${slideWidth}px` }}
+              className="flex-shrink-0 w-full xl:w-[32%]"
             >
-              <div className='bg-white shadow-md rounded-2xl p-8 mx-2 min-h-roadmap xl:min-h-roadmapApp'>
-                <div className="p-6 flex flex-col justify-center">
+              <div className='bg-white shadow-md rounded-2xl p-3 xl:p-8  xl:mx-2  min-h-roadmap xl:min-h-roadmapApp'>
+              <div className="flex flex-col xl:p-6  justify-center">
                   <div className='min-h-roadmapheading-area'>
                     <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>
                     <h3 className='text-primary text-roadmap-heading'>{slide.title}</h3>
@@ -81,13 +80,13 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
                     height={2}
                   />
                 </div>
-                <div className='py-2 px-6'>
+                <div className='py-2 px-1 xl:px-6'>
                   <strong>{slide.percentage}% Completed</strong>  
                 </div> 
                 <div>
-                  <ul className='text-default-size ps-6 py-6'>
+                <ul className='text-default-size xl:ps-6 py-6'>
                     {slide.content.map((item, index) => (
-                      <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6' key={index}>
+                      <li  className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6' key={index}>
                         <strong>{item.strong}:</strong> {item.content}
                       </li>
                     ))}

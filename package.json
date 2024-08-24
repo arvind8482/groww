@@ -13,6 +13,7 @@
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
     "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.3.30",
     "glob": "^11.0.0",
     "inflight": "^1.0.6",
     "next": "^14.2.5",
@@ -22,7 +23,8 @@
     "react-dom": "^18.3.1",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.30.2",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "tw-elements-react": "^1.0.0-alpha-end"
   },
   "devDependencies": {
     "@types/node": "^20",
