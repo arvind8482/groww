@@ -22,8 +22,8 @@ function WhatAppDesign() {
 
   return (
     <>
-      <section className='py-20 bg-secondary'>
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+      <section className='py-5 xl:py-20 bg-secondary'>
+        <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6 border-b-2 border-light-black'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -61,7 +61,7 @@ function WhatAppDesign() {
               We utilize Figma, a leading collaborative design tool, to create high-fidelity wireframes and interactive prototypes for your mobile application. This process includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -80,7 +80,7 @@ function WhatAppDesign() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -101,7 +101,7 @@ function WhatAppDesign() {
               Your app&apos;s logo is a critical element of its brand identity. Our logo design process involves:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -137,7 +137,7 @@ function WhatAppDesign() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -175,7 +175,7 @@ function WhatAppDesign() {
               User Interface (UI) and User Experience (UX) design are at the heart of our app design services. We focus on creating intuitive and engaging user experiences that keep your users coming back. This includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -201,7 +201,7 @@ function WhatAppDesign() {
         </div>
 
         <motion.div
-          className='container px-6 py-12 text-center xl:px-0 mx-auto'
+          className='container px-6 py-5 xl:py-12 text-center xl:px-0 mx-auto'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}

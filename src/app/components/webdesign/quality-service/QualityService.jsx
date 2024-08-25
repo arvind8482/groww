@@ -22,8 +22,8 @@ function QualityService() {
 
   return (
     <>
-      <section className='py-20 bg-secondary'>
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+      <section className='py-5 xl:py-20 bg-secondary'>
+        <div className='container px-6 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -61,7 +61,7 @@ function QualityService() {
               We use Figma, a leading design tool, to create high-fidelity wireframes and prototypes for your website. This allows us to:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -77,7 +77,7 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -98,7 +98,7 @@ function QualityService() {
               Your logo is the face of your brand, and we take its design seriously. Our logo design services include:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -134,7 +134,7 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -172,7 +172,7 @@ function QualityService() {
               Our website design services encompass the entire process of creating a website, from initial concept to final launch. This includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -191,7 +191,7 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
@@ -212,7 +212,7 @@ function QualityService() {
               To ensure your website is always online and performing at its best, we offer secure hosting and ongoing maintenance services:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-6 py-6'
+              className='text-default-size ps-6 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -248,7 +248,7 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container px-6 py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.p
             initial="hidden"
             whileInView="visible"

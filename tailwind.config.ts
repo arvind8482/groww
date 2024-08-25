@@ -95,6 +95,11 @@ const config: Config = {
           letterSpacing: '-0.01em',
           fontWeight: '600',
         }],
+        'section-headingSmall': ['24px', {
+          lineHeight: '32px',
+          letterSpacing: '-0.01em',
+          fontWeight: '600',
+        }],
         'section-heading': ['36px', {
           lineHeight: '48px',
           letterSpacing: '-0.01em',
@@ -102,6 +107,11 @@ const config: Config = {
         }],
         'section-subheading': ['24px', {
           lineHeight: '38px',
+          letterSpacing: '-0.01em',
+          fontWeight: '600',
+        }],
+        'section-subheadingSmall': ['16px', {
+          lineHeight: '24px',
           letterSpacing: '-0.01em',
           fontWeight: '600',
         }],

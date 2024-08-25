@@ -29,7 +29,7 @@ function Page() {
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
-          <SectionHeading subheading="About Us" heading="What We Offer" align="text-center" line="mx-auto" /> 
+          <SectionHeading subheading="Contact Us" heading="What We Offer" align="text-center" line="mx-auto" /> 
           <div className='flex flex-col xl:flex-row xl:space-x-6'>
             <motion.div
               className='w-full xl:w-9/12 mb-6 xl:mb-0'

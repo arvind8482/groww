@@ -17,9 +17,9 @@ function WhatMasterClasses() {
 
   return (
     <>
-      <section className='py-20 bg-secondary'>
+      <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +46,7 @@ function WhatMasterClasses() {
               Our Tools Master Class provides comprehensive training on essential tools used in modern
               development and operations. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6'>
+            <ul className='text-default-size ps-6 xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Docker:</strong> Learn containerization concepts, creating and managing containers, and using Docker for development and deployment.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Kubernetes:</strong> Understand container orchestration, deploying and managing containerized applications with Kubernetes.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Jenkins:</strong> Explore continuous integration and continuous delivery (CI/CD) pipelines, automating build and deployment processes with Jenkins.</li>
@@ -61,7 +61,7 @@ function WhatMasterClasses() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -76,7 +76,7 @@ function WhatMasterClasses() {
               Our Cloud Certification Master Class prepares participants for certification exams and provides
               hands-on experience with major cloud platforms. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6'>
+            <ul className='text-default-size ps-6 xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>AWS (Amazon Web Services):</strong> Comprehensive training on AWS services, architecture, and best practices, preparing for AWS certification exams.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Azure:</strong> Learn about Microsoft Azure services, solutions, and architecture, with preparation for Azure certification exams.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>GCP (Google Cloud Platform):</strong> Understand Google Cloud services, tools, and best practices, preparing for GCP certification exams.</li>
@@ -97,7 +97,7 @@ function WhatMasterClasses() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -124,7 +124,7 @@ function WhatMasterClasses() {
               Our Database Master Class covers key database technologies and their applications. This
               includes:
             </p>
-            <ul className='text-default-size ps-6 py-6'>
+            <ul className='text-default-size ps-6 xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MySQL:</strong> Learn relational database management with MySQL, including design, queries, and optimization.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>PostgreSQL:</strong> Gain expertise in PostgreSQL, an advanced relational database with support for complex queries and data types.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MongoDB:</strong> Understand NoSQL databases with MongoDB, including schema design, data modeling, and query operations.</li>
@@ -134,7 +134,7 @@ function WhatMasterClasses() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -149,7 +149,7 @@ function WhatMasterClasses() {
               Our Full Stack Master Class provides training on building end-to-end web applications using
               popular technology stacks. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6'>
+            <ul className='text-default-size ps-6 xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MERN Stack:</strong> Master the MERN stack (MongoDB, Express.js, React, Node.js) for developing modern web applications with a JavaScript-based stack.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MEAN Stack:</strong> Explore the MEAN stack (MongoDB, Express.js, Angular, Node.js) for building scalable web applications with a focus on Angular.</li>
             </ul>
@@ -169,7 +169,7 @@ function WhatMasterClasses() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}

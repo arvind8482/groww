@@ -154,12 +154,14 @@ const ContactForm = () => {
             </textarea>
           </div>
         </div>
+        <div className='flex justify-center xl:justify-start'>
         <button
           type='submit'
-          className='text-xl rounded-full font-semibold px-7 border border-2 border-primary py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white'
+          className='text-xl rounded-full font-semibold px-7  border border-2 border-primary py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white'
         >
           Send Message
         </button>
+        </div>
       </form>
       {status && <p className='mt-4 text-center'>{status}</p>}
     </>

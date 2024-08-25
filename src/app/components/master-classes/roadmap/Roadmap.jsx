@@ -140,7 +140,7 @@ function Roadmap() {
    
   return (
     <>
-      <section className='py-20 px-8 xl:px-0 bg-white'>
+   <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
           <SectionHeading subheading="Master Classes Service " heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
           <RoadmapItTraining roaadmapData={roaadmapData} /> 

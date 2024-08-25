@@ -17,9 +17,9 @@ function WhatItConsulting() {
 
   return (
     <>
-      <section className='py-20 bg-secondary'>
+      <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +46,7 @@ function WhatItConsulting() {
               Our Cloud Integration services focus on seamlessly connecting your on-premises systems with
               cloud-based solutions to enhance flexibility and efficiency. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6 '>
+            <ul className='text-default-size ps-6 xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Integration Strategy :</strong> Develop a strategy to integrate cloud services with existing IT infrastructure.
               </li>
@@ -67,7 +67,7 @@ function WhatItConsulting() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -81,7 +81,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our Cloud Migration services assist organizations in moving their IT resources from on-premises to cloud environments, ensuring a smooth transition with minimal disruption. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6 '>
+            <ul className='text-default-size ps-6 xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Migration Planning :</strong> Develop a detailed migration plan that outlines the scope, timeline, and resources required.
               </li>
@@ -114,7 +114,7 @@ function WhatItConsulting() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -140,7 +140,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our DevOps consultancy focuses on implementing and optimizing DevOps practices to improve collaboration, automation, and efficiency in software development and operations. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6 '>
+            <ul className='text-default-size ps-6 xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>DevOps Strategy :</strong> Develop a DevOps strategy to align development and operations teams and processes.
               </li>
@@ -161,7 +161,7 @@ function WhatItConsulting() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -175,7 +175,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our Web Development consultancy provides expert advice and solutions for building and enhancing web applications and websites. This includes:
             </p>
-            <ul className='text-default-size ps-6 py-6 '>
+            <ul className='text-default-size ps-6 xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Requirements Analysis :</strong> Understand your business goals and technical requirements to design a suitable web development strategy.
               </li>
@@ -207,7 +207,7 @@ function WhatItConsulting() {
           </motion.div>
         </motion.div>
 
-        <div className='container px-6 py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container px-6 py-5 xl:py-12 text-center xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           Visiongroww’s IT consultancy services are designed to provide you with expert advice and solutions to navigate complex IT challenges, enhance your technology infrastructure, and achieve your business objectives.
         </div>
       </section>
