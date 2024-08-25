@@ -21,7 +21,7 @@ function Page() {
 
   return (
     <>  
-      <section className='py-20 px-8 xl:px-0 bg-white'>
+      <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <motion.div
           className='container mx-auto'
           initial="hidden"
