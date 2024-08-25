@@ -62,7 +62,7 @@ function WhatItTraining() {
         </motion.div>
 
         <motion.div
-          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
+          className='container px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
