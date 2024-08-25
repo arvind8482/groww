@@ -18,8 +18,8 @@ const WhoWeAre = () => {
 
   return (
     <>
-      <section className='py-20 bg-secondary'>
-        <div className='container px-6 xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+      <section className='py-5 xl:py-20 bg-secondary'>
+        <div className='container xl:px-6 xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"

@@ -157,8 +157,8 @@ function Roadmap() {
     <>
       <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
-          <SectionHeading subheading="Web Design" heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
-          <RoadmapWebDesign roaadmapData={roaadmapData} /> 
+          <SectionHeading subheading="Web Design"   heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
+          <RoadmapWebDesign roaadmapData={roaadmapData}   /> 
           <p className='text-default py-6 text-primary text-center '>
           This roadmap ensures that every aspect of your web design and development process is
 meticulously managed, from the initial consultation through to long-term support and
