@@ -13,7 +13,7 @@ function Footer() {
   src='/images/logo-footer.png'  className='w-[200px] xl:w-[312px] mb-4'  alt='' width={312} height={69}  
     /> 
                            <div className='border-t border-light border-solid py-4 xl:pb-10 text-default-size'>
-                           VisionGroww is a dynamic and innovative IT solutions provider dedicated to delivering top-notch services in web and app design, IT training, consultancy, and master classes
+                            VisionGroww is a dynamic and innovative IT solutions provider dedicated to delivering top-notch services in web and app design, IT training, consultancy, and master classes
                            </div>
                    </div>
                    <div className='w-full xl:w-1/3 border-0  xl:border-e xl:border-light xl:p-6'>
