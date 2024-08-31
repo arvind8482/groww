@@ -48,7 +48,7 @@ function Footer() {
                         </div>
                    </div>
             </div>
-            <div className='container xl:mx-auto  text-center border-t border-light mt-4 pt-6'>
+            <div className='container mx-auto  text-center border-t border-light mt-4 pt-6'>
             Copyright © visiongroww.com 2024
             </div>
  </footer>
