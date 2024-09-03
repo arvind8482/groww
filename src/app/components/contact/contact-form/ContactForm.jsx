@@ -28,7 +28,7 @@ const ContactForm = () => {
     return re.test(String(contact));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateEmail(formData.email)) {
@@ -43,32 +43,24 @@ const ContactForm = () => {
 
     setStatus('Submitting...');
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    // Create a new form element
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'sendemail.php';
 
-      if (response.ok) {
-        setStatus('Thank you for your message!');
-        setFormData({
-          name: '',
-          email: '',
-          contact: '',
-          subject: '',
-          message: '',
-        }); // Clear form
-      } else {
-        setStatus('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      setStatus('An error occurred. Please try again.');
-    }
+    // Append form data
+    Object.keys(formData).forEach((key) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = key;
+      input.value = formData[key];
+      form.appendChild(input);
+    });
+
+    // Append the form to the body and submit it
+    document.body.appendChild(form);
+    form.submit();
   };
-
 
   return (
     <>

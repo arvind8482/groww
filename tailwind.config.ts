@@ -45,7 +45,8 @@ const config: Config = {
         'roadmap': '860px',
         'roadmapsmall': '860px',
         'masterclasses': '960px',
-        'roadmapApp': '860px'
+        'roadmapApp': '860px',
+        'caraousal': '440px',
       },
       spacing: {
         'services': '32%',
