@@ -61,14 +61,14 @@ function Page() {
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
                 <div>
                   <Image
-                    src="/images/contact-call.svg"
+                    src="/images/icon-whatsapp.svg"
                     width={48}
                     height={48}
                     alt="Contact Call"
                   />
                 </div>
                 <div className='text-default text-primary font-semibold'>
-                  <Link href="tel:+911234567890">+91 1234567890</Link>
+                  <Link href="tel:+91919457192030">+91 9457192030</Link>
                 </div>
               </div>
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>

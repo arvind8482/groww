@@ -56,7 +56,7 @@ function Footer() {
             <div className='container mx-auto  text-center border-t border-light mt-4 pt-6'>
             Copyright © visiongroww.com 2024
             </div>
-            <a href='#' className='fixed right-[10px] bottom-[10px]'>
+            <a href='https://wa.me/919457192030' target='_blank' className='fixed right-[10px] bottom-[10px]'>
                         <Image
     src='/images/icon-whatsapp.svg' alt='' width={45} height={45}
     /> </a>
