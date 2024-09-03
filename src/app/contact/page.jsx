@@ -44,7 +44,7 @@ function Page() {
                           <Image
                             src="/images/icon-whatsapp.svg"
                             width={48}
-                            height={48}
+                            height={48} className='py-3 xl:py-0'
                             alt="Contact Call"
                           />
                         </div>
