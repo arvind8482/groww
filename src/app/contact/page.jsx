@@ -42,7 +42,7 @@ function Page() {
                     <div className=' flex flex-col  xl:flex-row xl:space-x-6 items-center'>
                         <div>
                         
-                            <Link href='https://wa.me/919193924595' target='_blank' className='py-3 xl:py-0'>
+                            <Link href='https://wa.me/919193924595' target='_blank' className='my-3 xl:my-0'>
                         <Image
     src='/images/icon-whatsapp.svg'   alt='' width={48} height={48}
     /> </Link>
