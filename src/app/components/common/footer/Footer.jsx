@@ -32,23 +32,23 @@ function Footer() {
                    </div>
                    <div className='w-full xl:w-1/3 p-6 self-center'>
                         <div className='flex justify-center items-center'>
-                        <a href='#' className='me-4'>
+                        <Link href='#' className='me-4'>
                         <Image
    src='/images/si-facebook.svg' alt='' width={45} height={45}
     />
-                         </a>
-                        <a href='#' className='me-4'>
+                         </Link>
+                        <Link href='#' className='me-4'>
                         <Image
    src='/images/si-linkedin.svg' alt='' width={45} height={45}
-    /> </a>
-                        <a href='#' className='me-4'>
+    /> </Link>
+                        <Link href='#' className='me-4'>
                         <Image
     src='/images/si-x.svg' alt='' width={45} height={45}
-    /> </a>
-                      <a href='#'>
+    /> </Link>
+                      <Link href='#'>
                         <Image
     src='/images/si-insta.svg' alt='' width={45} height={45}
-    /> </a>
+    /> </Link>
             
                         </div>
                    </div>
@@ -56,10 +56,10 @@ function Footer() {
             <div className='container mx-auto  text-center border-t border-light mt-4 pt-6'>
             Copyright © visiongroww.com 2024
             </div>
-            <a href='https://wa.me/919193924595' target='_blank' className='fixed right-[25px] bottom-[25px]'>
+            <Link href='https://wa.me/919193924595' target='_blank' className='fixed right-[25px] bottom-[25px]'>
                         <Image
     src='/images/icon-whatsapp.svg'   alt='' width={60} height={60}
-    /> </a>
+    /> </Link>
  </footer>
     </>
   )

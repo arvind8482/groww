@@ -44,9 +44,13 @@ function Page() {
                           <Image
                             src="/images/icon-whatsapp.svg"
                             width={48}
-                            height={48} className='py-3 xl:py-0'
+                            height={48} className='py-3 hidden xl:flex xl:py-0'
                             alt="Contact Call"
-                          />
+                          /> 
+                            <Link href='https://wa.me/919193924595' target='_blank' className='flex xl:hidden py-3 xl:py-0'>
+                        <Image
+    src='/images/icon-whatsapp.svg'   alt='' width={48} height={48}
+    /> </Link>
                         </div>
                         <div className='text-default text-primary font-semibold'>
                           <Link href="tel:+9193924595">+91-9193924595</Link>
