@@ -37,6 +37,22 @@ function Page() {
             >
               <div className='shadow-md rounded-2xl p-6 mb-6'>
                 <SectionHeadingTwoLine heading="Get in Touch" line="me-auto" />
+                <div  className='p-6 rounded-xl text-2xl mb-4 text-primary font-semibold flex space-x-6 items-center bg-gradient-to-r from-gradient-top to-gradient-bottom '>
+                    <div>Contact us on WhatsApp</div>
+                    <div className=' flex space-x-6 items-center'>
+                        <div>
+                          <Image
+                            src="/images/icon-whatsapp.svg"
+                            width={48}
+                            height={48}
+                            alt="Contact Call"
+                          />
+                        </div>
+                        <div className='text-default text-primary font-semibold'>
+                          <Link href="tel:+91919457192030">+91 9457192030</Link>
+                        </div>
+                    </div>
+                </div>
                 <p className='text-default text-primary mb-6'>
                   Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours. 
                 </p>
@@ -57,20 +73,7 @@ function Page() {
                   />
                 </div>
                 <div className='text-default text-primary font-semibold'>Rambagh Agra 282006</div>
-              </div>
-              <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
-                <div>
-                  <Image
-                    src="/images/icon-whatsapp.svg"
-                    width={48}
-                    height={48}
-                    alt="Contact Call"
-                  />
-                </div>
-                <div className='text-default text-primary font-semibold'>
-                  <Link href="tel:+91919457192030">+91 9457192030</Link>
-                </div>
-              </div>
+              </div> 
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
                 <div>
                   <Image

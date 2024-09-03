@@ -61,7 +61,7 @@ function WhatAppDesign() {
               We utilize Figma, a leading collaborative design tool, to create high-fidelity wireframes and interactive prototypes for your mobile application. This process includes:
             </motion.p>
             <motion.ul
-              className='text-default-size  ps-0 xl:ps-6  xl:py-6'
+              className='text-default-size  ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -101,7 +101,7 @@ function WhatAppDesign() {
               Your app&apos;s logo is a critical element of its brand identity. Our logo design process involves:
             </motion.p>
             <motion.ul
-              className='text-default-size  ps-0 xl:ps-6  xl:py-6'
+              className='text-default-size  ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -175,7 +175,7 @@ function WhatAppDesign() {
               User Interface (UI) and User Experience (UX) design are at the heart of our app design services. We focus on creating intuitive and engaging user experiences that keep your users coming back. This includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0 xl:ps-6 xl:py-6'
+              className='text-default-size ps-0xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>

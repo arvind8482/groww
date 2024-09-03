@@ -17,6 +17,12 @@
     opacity: 0;
     transition: opacity 300ms ease-in;
   } 
+
+  @media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
  
   
 

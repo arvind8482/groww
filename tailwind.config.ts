@@ -38,14 +38,14 @@ const config: Config = {
         'list': 'url(/images/img-list.png)',
       },
       minHeight: {
-        'tabs-content': '446px',
+        'tabs-content': '860px',
         'tabs-subheading': '84px',
         'clientbox': '160px',
         'roadmapheading-area': '120px',
-        'roadmap': '770px',
+        'roadmap': '860px',
         'roadmapsmall': '860px',
-        'masterclasses': '800px',
-        'roadmapApp': '720px'
+        'masterclasses': '960px',
+        'roadmapApp': '860px'
       },
       spacing: {
         'services': '32%',

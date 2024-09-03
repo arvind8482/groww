@@ -61,7 +61,7 @@ function QualityService() {
               We use Figma, a leading design tool, to create high-fidelity wireframes and prototypes for your website. This allows us to:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0 xl:ps-6  xl:py-6'
+              className='text-default-size ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -98,7 +98,7 @@ function QualityService() {
               Your logo is the face of your brand, and we take its design seriously. Our logo design services include:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0 xl:ps-6  xl:py-6'
+              className='text-default-size ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -172,7 +172,7 @@ function QualityService() {
               Our website design services encompass the entire process of creating a website, from initial concept to final launch. This includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0 xl:ps-6 xl:py-6'
+              className='text-default-size ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
@@ -212,7 +212,7 @@ function QualityService() {
               To ensure your website is always online and performing at its best, we offer secure hosting and ongoing maintenance services:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0 xl:ps-6  xl:py-6'
+              className='text-default-size ps-0 xl:py-6'
               variants={textVariants}
             >
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
