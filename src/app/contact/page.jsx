@@ -49,7 +49,7 @@ function Page() {
                           />
                         </div>
                         <div className='text-default text-primary font-semibold'>
-                          <Link href="tel:+91919457192030">+91 9457192030</Link>
+                          <Link href="tel:+9193924595">+91 9193924595</Link>
                         </div>
                     </div>
                 </div>
