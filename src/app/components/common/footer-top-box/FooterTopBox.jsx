@@ -27,7 +27,7 @@ function FooterTopBox() {
               variants={containerVariants}
             >
               <Image
-                src='/images/icon-call.png' 
+                src='/images/icon-call.svg' 
                 alt='' 
                 className='mx-6'  
                 width={63} 

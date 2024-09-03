@@ -21,14 +21,14 @@ const WhyChooseUs = () => {
       <section className='py-5 xl:py-20 bg-white'>
         <div className='container xl:px-6 xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2 xl:me-6'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
           >
             <Image
-              src="/images/img-whatwedo.png"
+              src="/images/img-whatwedo.svg"
               className='w-full'
               alt=''
               width={618}
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
           </motion.div>
 
           <motion.div
-            className='w-full xl:w-1/2 pt-2 xl:pt-0'
+            className='w-full xl:w-1/2 pt-2 xl:pt-0 '
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }}}
-              className='text-default-size xl:ps-6 xl:py-6'
+              className='text-default-size xl:py-6'
             >
               <motion.li variants={listVariants} className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Expert Team : </strong>Our team comprises highly skilled professionals with extensive experience in various technologies.

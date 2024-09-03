@@ -30,7 +30,7 @@ function WhatMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-softwaredevelopment.png'
+              src='/images/img-softwaredevelopment.svg'
               className='w-full xl:w-4/5'
               alt=''
               width={580}
@@ -46,7 +46,7 @@ function WhatMasterClasses() {
               Our Tools Master Class provides comprehensive training on essential tools used in modern
               development and operations. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6'>
+            <ul className='text-default-size xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Docker:</strong> Learn containerization concepts, creating and managing containers, and using Docker for development and deployment.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Kubernetes:</strong> Understand container orchestration, deploying and managing containerized applications with Kubernetes.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Jenkins:</strong> Explore continuous integration and continuous delivery (CI/CD) pipelines, automating build and deployment processes with Jenkins.</li>
@@ -76,7 +76,7 @@ function WhatMasterClasses() {
               Our Cloud Certification Master Class prepares participants for certification exams and provides
               hands-on experience with major cloud platforms. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6'>
+            <ul className='text-default-size  xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>AWS (Amazon Web Services):</strong> Comprehensive training on AWS services, architecture, and best practices, preparing for AWS certification exams.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Azure:</strong> Learn about Microsoft Azure services, solutions, and architecture, with preparation for Azure certification exams.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>GCP (Google Cloud Platform):</strong> Understand Google Cloud services, tools, and best practices, preparing for GCP certification exams.</li>
@@ -87,7 +87,7 @@ function WhatMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-cloud-migrats.png'
+              src='/images/img-cloud-migrats.svg'
               className='w-full xl:w-4/5 xl:ms-auto'
               alt=''
               width={472}
@@ -108,11 +108,11 @@ function WhatMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src='/images/web-design-hosting.png'
+              src='/images/web-design-hosting.svg'
               className='w-full xl:w-3/5 xl:me-auto'
               alt=''
               width={406}
-              height={511}
+              height={511}  
             />
           </motion.div>
           <motion.div
@@ -124,7 +124,7 @@ function WhatMasterClasses() {
               Our Database Master Class covers key database technologies and their applications. This
               includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6'>
+            <ul className='text-default-size  xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MySQL:</strong> Learn relational database management with MySQL, including design, queries, and optimization.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>PostgreSQL:</strong> Gain expertise in PostgreSQL, an advanced relational database with support for complex queries and data types.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MongoDB:</strong> Understand NoSQL databases with MongoDB, including schema design, data modeling, and query operations.</li>
@@ -149,7 +149,7 @@ function WhatMasterClasses() {
               Our Full Stack Master Class provides training on building end-to-end web applications using
               popular technology stacks. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6'>
+            <ul className='text-default-size xl:py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MERN Stack:</strong> Master the MERN stack (MongoDB, Express.js, React, Node.js) for developing modern web applications with a JavaScript-based stack.</li>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MEAN Stack:</strong> Explore the MEAN stack (MongoDB, Express.js, Angular, Node.js) for building scalable web applications with a focus on Angular.</li>
             </ul>
@@ -159,7 +159,7 @@ function WhatMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-fullstack.png'
+              src='/images/img-fullstack.svg'
               className='w-full xl:w-4/5 xl:ms-auto'
               alt=''
               width={566}

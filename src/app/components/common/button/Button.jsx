@@ -9,20 +9,17 @@ function Button(props) {
   };
 
   return (
-    <>
-      <motion.a
-        href={props.href}
-        className="text-xl rounded-full mb-4 font-semibold px-7 border border-2 border-primary me-4 py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white"
-        variants={buttonVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        {props.text}
-      </motion.a>
-    </>
+    <motion.a
+      href={props.href}
+      className="text-xl rounded-full mb-4 font-semibold px-7 border border-2 border-primary me-4 py-2 text-primary  hover:bg-secondary-dark hover:border-secondary-dark2 hover:text-white "
+      variants={buttonVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      {props.text}
+    </motion.a>
   );
 }
 
 export default Button;
-  

@@ -72,7 +72,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} action={"sendemail.php"}>
         <div className='flex flex-col xl:flex-row xl:space-x-6'>
           <div className='w-full xl:w-1/2'>
             <div className='bg-secondary rounded-md px-6 py-4 flex space-x-6 items-center mb-4'>
@@ -157,7 +157,7 @@ const ContactForm = () => {
         <div className='flex justify-center xl:justify-start'>
         <button
           type='submit'
-          className='text-xl rounded-full font-semibold px-7  border border-2 border-primary py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white'
+          className='text-xl rounded-full font-semibold px-7  border border-2 border-primary py-2 text-primary hover:border-secondary-dark2 hover:bg-btn-hover hover:text-white'
         >
           Send Message
         </button>

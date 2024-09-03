@@ -10,7 +10,7 @@ function Footer() {
             <div className='container mx-auto flex flex-col xl:flex-row xl:items-center xl:items-stretch'>
                    <div className='w-full xl:w-1/3 border-0 xl:border-e xl:border-light xl:p-6'>
                    <Image
-  src='/images/logo-footer.png'  className='w-[200px] xl:w-[312px] mb-4'  alt='' width={312} height={69}  
+  src='/images/logo-footer.svg'  className='w-[200px] xl:w-[312px] mb-4'  alt='' width={312} height={69}  
     /> 
                            <div className='border-t border-light border-solid py-4 xl:pb-10 text-default-size'>
                             VisionGroww is a dynamic and innovative IT solutions provider dedicated to delivering top-notch services in web and app design, IT training, consultancy, and master classes
@@ -34,23 +34,32 @@ function Footer() {
                         <div className='flex justify-center items-center'>
                         <a href='#' className='me-4'>
                         <Image
-   src='/images/si-facebook.png' alt='' width={45} height={45}
+   src='/images/si-facebook.svg' alt='' width={45} height={45}
     />
                          </a>
                         <a href='#' className='me-4'>
                         <Image
-   src='/images/si-linkedin.png' alt='' width={45} height={45}
+   src='/images/si-linkedin.svg' alt='' width={45} height={45}
     /> </a>
-                        <a href='#'>
+                        <a href='#' className='me-4'>
                         <Image
-    src='/images/si-x.png' alt='' width={45} height={45}
+    src='/images/si-x.svg' alt='' width={45} height={45}
     /> </a>
+                      <a href='#'>
+                        <Image
+    src='/images/si-insta.svg' alt='' width={45} height={45}
+    /> </a>
+            
                         </div>
                    </div>
             </div>
             <div className='container mx-auto  text-center border-t border-light mt-4 pt-6'>
             Copyright © visiongroww.com 2024
             </div>
+            <a href='#' className='fixed right-[10px] bottom-[10px]'>
+                        <Image
+    src='/images/icon-whatsapp.svg' alt='' width={45} height={45}
+    /> </a>
  </footer>
     </>
   )

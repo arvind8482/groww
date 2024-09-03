@@ -36,7 +36,7 @@ const AboutAppDesign = () => {
               variants={imageVariants}
             >
               <Image
-                src="/images/web-design-1.png"
+                src="/images/web-design-1.svg"
                 width={619}
                 height={368}
                 alt=""

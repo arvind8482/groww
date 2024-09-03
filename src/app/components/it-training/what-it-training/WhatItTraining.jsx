@@ -35,7 +35,7 @@ function WhatItTraining() {
             variants={imageVariants}
           >
             <Image
-              src='/images/img-cloudtraining.png'
+              src='/images/img-cloudtraining.svg'
               className='w-full xl:w-4/5'
               alt=''
               width={632}
@@ -89,7 +89,7 @@ function WhatItTraining() {
             variants={imageVariants}
           >
             <Image
-              src='/images/web-design-logo.png'
+              src='/images/web-design-logo.svg'
               className='w-full xl:w-4/5 xl:ms-auto'
               alt=''
               width={317}
@@ -110,7 +110,7 @@ function WhatItTraining() {
             variants={imageVariants}
           >
             <Image
-              src='/images/img-ai.png'
+              src='/images/img-ai.svg'
               className='w-full xl:w-3/5 xl:me-auto'
               alt=''
               width={860}

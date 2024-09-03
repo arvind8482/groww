@@ -135,7 +135,7 @@ function Roadmap() {
     <>
    <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
-          <SectionHeading subheading="IT Training" heading="Services" align="text-center" line="mx-auto" /> 
+          <SectionHeading subheading="IT Training" heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
           <RoadmapItTraining roaadmapData={roaadmapData} /> 
           <p className='text-default py-6 text-primary text-center '>
           This streamlined roadmap ensures that each aspect of the IT training process is

@@ -22,7 +22,7 @@ function AboutUs() {
         <div className='container mx-auto flex flex-col xl:flex-row xl:space-x-6'>
           <motion.div className='w-full xl:w-1/2' initial="hidden" whileInView="visible" variants={fadeInRight} viewport={{ once: true }}>
             <Image
-              src="/images/img-about.png"
+              src="/images/img-about.svg"
               className='w-full mb-6 xl:mb-0'
               width={619}
               height={368}

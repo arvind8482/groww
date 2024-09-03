@@ -26,7 +26,7 @@ function Welcome() {
           </motion.div>
           <motion.div className='w-full xl:w-1/2' initial="hidden" whileInView="visible" variants={fadeInUp} viewport={{ once: true }}>
             <Image
-              src='/images/img-welcome.jpg'
+              src='/images/img-welcome.svg'
               className='w-full mt-8 xl:mt-0'
               alt='Welcome Image'
               width={693}

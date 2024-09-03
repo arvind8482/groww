@@ -27,6 +27,7 @@ const config: Config = {
         "primary": "#01161E",
         "secondary": "#E1F5F4",
         "secondary-dark": "#A3D4D2",
+        "secondary-dark2": "#367370",
         "light": "rgba(225, 245, 244, 0.45)",
         "light-black": "rgba(0, 0, 0, 0.16)",
         "gradient-top": "#A3D4D2",

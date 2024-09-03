@@ -36,7 +36,7 @@ function AboutItConsulting() {
             variants={imageVariants}
           >
             <Image
-              src="/images/web-design-1.png"
+              src="/images/web-design-1.svg"
               width={619}
               height={368}
               alt=""
@@ -46,7 +46,7 @@ function AboutItConsulting() {
             className='w-full xl:w-1/2'
             variants={textVariants}
           >
-            <SectionHeading subheading="IT Consultancy" heading="Services" align="text-left" line="mx-none" />
+            <SectionHeading subheading="What we’ll provide" heading="IT Consultancy" align="text-left" line="mx-none" />
             <p className='text-default-size'>
               At Visiongroww, our IT consultancy services are designed to help organizations optimize their IT
               infrastructure, streamline processes, and achieve their technology goals. We offer expert

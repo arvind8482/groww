@@ -50,7 +50,7 @@ function Page() {
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
                 <div>
                   <Image
-                    src="/images/contact-map.png"
+                    src="/images/contact-map.svg"
                     width={46}
                     height={60}
                     alt="Contact Map"
@@ -61,7 +61,7 @@ function Page() {
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
                 <div>
                   <Image
-                    src="/images/contact-call.png"
+                    src="/images/contact-call.svg"
                     width={48}
                     height={48}
                     alt="Contact Call"
@@ -74,7 +74,7 @@ function Page() {
               <div className='shadow-md rounded-2xl p-6 mb-6 flex space-x-6 items-center'>
                 <div>
                   <Image
-                    src="/images/contact-mail.png"
+                    src="/images/contact-mail.svg"
                     width={57}
                     height={46}
                     alt="Contact Mail"

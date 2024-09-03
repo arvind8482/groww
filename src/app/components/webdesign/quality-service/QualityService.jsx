@@ -33,7 +33,7 @@ function QualityService() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-figma.png'
+                src='/images/web-design-figma.svg'
                 className='w-full xl:w-4/5'
                 alt=''
                 width={432}
@@ -124,7 +124,7 @@ function QualityService() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-logo.png'
+                src='/images/web-design-logo.svg'
                 className='w-full xl:w-4/5 xl:ms-auto'
                 alt=''
                 width={317}
@@ -144,7 +144,7 @@ function QualityService() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-website.png'
+                src='/images/web-design-website.svg'
                 className='w-full xl:w-3/5 xl:me-auto'
                 alt=''
                 width={432}
@@ -238,7 +238,7 @@ function QualityService() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-hosting.png'
+                src='/images/web-design-hosting.svg'
                 className='w-full xl:w-3/5 xl:ms-auto'
                 alt=''
                 width={406}

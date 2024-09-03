@@ -31,7 +31,7 @@ const OurApproach = () => {
             <p className='text-default-size'>
               At VisionGroww, our client-centered approach ensures we thoroughly understand your needs and objectives from the very beginning. We work collaboratively with you throughout the project, involving you at every step to ensure the final product aligns with your vision. Our proven process includes:
             </p>
-            <ul className='text-default-size xl:ps-6 py-6'>
+            <ul className='text-default-size py-6'>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Initial Consultation & Requirement Gathering :</strong> We listen to your needs and provide a tailored proposal for web and app design, IT training, or consultancy services.
               </li>
@@ -60,7 +60,7 @@ const OurApproach = () => {
             variants={imageVariants}
           >
             <Image
-              src='/images/img-ourapproach.png'
+              src='/images/img-ourapproach.svg'
               className='w-full'
               alt=''
               width={621}

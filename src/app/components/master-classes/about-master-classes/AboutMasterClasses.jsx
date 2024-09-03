@@ -31,7 +31,7 @@ function AboutMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src="/images/web-design-1.png"
+              src="/images/web-design-1.svg"
               width={619}
               height={368}
               alt=""
@@ -41,7 +41,7 @@ function AboutMasterClasses() {
             className='w-full xl:w-1/2'
             variants={itemVariants}
           >
-            <SectionHeading subheading="About" heading="Master Classes" align="text-left" line="mx-none" />
+            <SectionHeading subheading="What we’ll provide" heading="Master Classes" align="text-left" line="mx-none" />
             <p className='text-default-size'>
               Visiongroww’s Master Classes are designed to provide in-depth knowledge and hands-on
               experience with cutting-edge tools and technologies. Our master classes cover a range of topics

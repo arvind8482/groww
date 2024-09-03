@@ -30,7 +30,7 @@ function WhatItConsulting() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-cloud-integrat.png'
+              src='/images/img-cloud-integrat.svg'
               className='w-full xl:w-4/5'
               alt=''
               width={764}
@@ -46,7 +46,7 @@ function WhatItConsulting() {
               Our Cloud Integration services focus on seamlessly connecting your on-premises systems with
               cloud-based solutions to enhance flexibility and efficiency. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6 '>
+            <ul className='text-default-size xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Integration Strategy :</strong> Develop a strategy to integrate cloud services with existing IT infrastructure.
               </li>
@@ -81,7 +81,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our Cloud Migration services assist organizations in moving their IT resources from on-premises to cloud environments, ensuring a smooth transition with minimal disruption. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6 '>
+            <ul className='text-default-size xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Migration Planning :</strong> Develop a detailed migration plan that outlines the scope, timeline, and resources required.
               </li>
@@ -104,7 +104,7 @@ function WhatItConsulting() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-cloud-migrats.png'
+              src='/images/img-cloud-migrats.svg'
               className='w-full xl:w-4/5 xl:ms-auto'
               alt=''
               width={472}
@@ -125,7 +125,7 @@ function WhatItConsulting() {
             variants={itemVariants}
           >
             <Image
-              src='/images/img-cloudtraining.png'
+              src='/images/img-cloudtraining.svg'
               className='w-full xl:w-3/5 xl:me-auto'
               alt=''
               width={632}
@@ -140,7 +140,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our DevOps consultancy focuses on implementing and optimizing DevOps practices to improve collaboration, automation, and efficiency in software development and operations. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6 '>
+            <ul className='text-default-size xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>DevOps Strategy :</strong> Develop a DevOps strategy to align development and operations teams and processes.
               </li>
@@ -175,7 +175,7 @@ function WhatItConsulting() {
             <p className='text-default-size'>
               Our Web Development consultancy provides expert advice and solutions for building and enhancing web applications and websites. This includes:
             </p>
-            <ul className='text-default-size xl:ps-6 xl:py-6 '>
+            <ul className='text-default-size xl:py-6 '>
               <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
                 <strong>Requirements Analysis :</strong> Understand your business goals and technical requirements to design a suitable web development strategy.
               </li>
@@ -198,7 +198,7 @@ function WhatItConsulting() {
             variants={itemVariants}
           >
             <Image
-              src='/images/web-design-website.png'
+              src='/images/web-design-website.svg'
               className='w-full xl:w-3/5 xl:ms-auto'
               alt=''
               width={432}

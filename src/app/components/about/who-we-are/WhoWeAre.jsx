@@ -40,7 +40,7 @@ const WhoWeAre = () => {
             variants={imageVariants}
           >
             <Image
-              src="/images/img-whoweare.png"
+              src="/images/img-whoweare.svg"
               className='w-full'
               alt=''
               width={603}

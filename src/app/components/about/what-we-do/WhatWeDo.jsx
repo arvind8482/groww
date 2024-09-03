@@ -5,11 +5,11 @@ import SectionHeadingTwoLine from '../../common/section-heading-twoline/SectionH
 function WhatWeDo() {
   return (
     <>
-     <section className='py-5 xl:py-20 bg-white'>
+     <section className='py-5 xl:py-20 xl:space-x-6 bg-white'>
             <div className='container  mx-auto flex flex-col xl:flex-row xl:items-center'>
-            <div className='w-full xl:w-1/2 mb-2 xl:mb-0'>
+            <div className='w-full xl:w-1/2 mb-2 xl:mb-0 xl:me-6'>
             <Image
-      src="/images/img-whatwedo.png"
+      src="/images/img-whatwedo.svg"
       width={618}
       height={644}
       alt="" className='w-full' 
@@ -21,7 +21,7 @@ function WhatWeDo() {
                     <p className='text-default-size '>
                     At VisionGroww, we specialize in delivering top-tier IT services to help your business excel in the digital age. Our diverse offerings include:
                       </p>
-                      <ul className='text-default-size xl:ps-6 py-6 '>
+                      <ul className='text-default-size py-6 '>
                             <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Web Design: </strong>We create responsive, user-friendly websites tailored to your business needs, along with stunning visual designs and memorable logos to enhance your online presence. Enjoy robust secure hosting with three months of free maintenance to ensure your website&apos;s performance.</li>
                             <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>App Design (Android/iOS) :</strong> We design intuitive app interfaces and distinctive logos, prioritizing exceptional user experiences. Our app designs also include three months of maintenance for optimal performance.</li>
                             <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>IT Training :</strong> Our specialized training programs cover Cloud & DevOps (AWS, Azure, GCP), Web Development, AI/ML, and IoT, helping you master essential skills for today&apos;s tech landscape.</li>

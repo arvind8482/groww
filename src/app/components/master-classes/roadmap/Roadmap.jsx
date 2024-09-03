@@ -142,7 +142,7 @@ function Roadmap() {
     <>
    <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <div className='container mx-auto'>
-          <SectionHeading subheading="Master Classes Service " heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
+          <SectionHeading subheading="Master Classes" heading="Delivery Roadmap" align="text-center" line="mx-auto" /> 
           <RoadmapItTraining roaadmapData={roaadmapData} /> 
           <p className='text-default py-6 text-primary text-center '>
           This roadmap ensures a structured approach to delivering master classes, from initial

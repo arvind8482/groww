@@ -27,7 +27,7 @@ const AboutSection = () => {
           variants={imageVariants}
         >
           <Image
-            src="/images/img-about.png"
+            src="/images/img-about.svg"
             width={619}
             height={368}
             alt=""
