@@ -37,7 +37,7 @@ function Page() {
             >
               <div className='shadow-md rounded-2xl p-6 mb-6'>
                 <SectionHeadingTwoLine heading="Get in Touch" line="me-auto" />
-                <div  className='p-6 rounded-xl text-2xl mb-4 text-primary font-semibold flex space-x-6 items-center bg-gradient-to-r from-gradient-top to-gradient-bottom '>
+                <div  className='p-6 rounded-xl text-2xl mb-4 text-primary font-semibold flex fliex-col justify-center xl:justify-start xl:flex-row space-x-6 items-center bg-gradient-to-r from-gradient-top to-gradient-bottom '>
                     <div>Contact us on WhatsApp</div>
                     <div className=' flex space-x-6 items-center'>
                         <div>
