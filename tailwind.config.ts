@@ -38,7 +38,7 @@ const config: Config = {
         'list': 'url(/images/img-list.png)',
       },
       minHeight: {
-        'tabs-content': '860px',
+        'tabs-content': '440px',
         'tabs-subheading': '84px',
         'clientbox': '160px',
         'roadmapheading-area': '120px',
