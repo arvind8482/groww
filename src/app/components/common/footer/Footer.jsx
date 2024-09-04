@@ -25,7 +25,7 @@ function Footer() {
                                             
                                         </div>
                                         <div className='flex flex-col  text-xl'>
-                                        <Link href="/blog" className='mb-4'>Blog</Link>
+                                        <Link  href="https://medium.com/@ratanshakya999/how-to-create-a-vpc-virtual-private-cloud-in-aws-cloud-9776b55829cc"  target='_blank' className='mb-4'>Blog</Link>
                                         <Link href="/contact" className='mb-4'>Contact Us</Link> 
                                         </div>
                             </diiv>

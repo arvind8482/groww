@@ -128,7 +128,7 @@ export default function Header() {
           <Link href="/about" className="text-xl font-semibold leading-6 text-primary">
             About Us
           </Link>
-          <Link href="/blog" className="text-xl font-semibold leading-6 text-primary">
+          <Link  href="https://medium.com/@ratanshakya999/how-to-create-a-vpc-virtual-private-cloud-in-aws-cloud-9776b55829cc"  target='_blank' className="text-xl font-semibold leading-6 text-primary">
             Blog
           </Link>
         </div>
@@ -182,7 +182,7 @@ export default function Header() {
                   About Us
                 </Link>
                 <Link
-                  href="/blog"
+                  href="https://medium.com/@ratanshakya999/how-to-create-a-vpc-virtual-private-cloud-in-aws-cloud-9776b55829cc"  target='_blank'
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
