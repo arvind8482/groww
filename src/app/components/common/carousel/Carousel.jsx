@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 const Carousel = ({ carouselData = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,6 +8,9 @@ const Carousel = ({ carouselData = [] }) => {
   const [slideWidth, setSlideWidth] = useState(0);
   const carouselRef = useRef(null);
   const autoScrollIntervalRef = useRef(null);
+
+  // Duplicate the data 100 times
+  const infiniteCarouselData = Array(100).fill(carouselData).flat();
 
   const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
@@ -18,23 +21,38 @@ const Carousel = ({ carouselData = [] }) => {
   }, [windowWidth]);
 
   const updateWindowWidth = useCallback(() => {
-    setWindowWidth(window.outerWidth);
+    setWindowWidth(window.innerWidth); // Use window.innerWidth for better accuracy
   }, []);
 
   const goToNext = useCallback(() => {
-    setCurrentIndex(prevIndex => {
-      const maxIndex = windowWidth > 1023 ? 5 : Math.max(0, carouselData.length - Math.ceil(windowWidth / slideWidth));
-      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
-    });
-  }, [windowWidth, carouselData.length, slideWidth]);
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = infiniteCarouselData.length - 1;
+      const newIndex = prevIndex + 1;
 
-  const goToPrev = () => {
-    setCurrentIndex(prevIndex => {
-      const slidesToShow = Math.ceil(windowWidth / slideWidth);
-      const maxIndex = Math.max(0, carouselData.length - slidesToShow);
-      return prevIndex <= 0 ? maxIndex : prevIndex - 1;
+      // Loop back to the first slide if we reach the end
+      return newIndex > maxIndex ? 0 : newIndex;
     });
-  };
+  }, [infiniteCarouselData.length]);
+
+  const goToPrev = useCallback(() => {
+    setCurrentIndex((prevIndex) => {
+      const maxIndex = infiniteCarouselData.length - 1;
+      const newIndex = prevIndex - 1;
+
+      // Loop back to the last slide if we reach the beginning
+      return newIndex < 0 ? maxIndex : newIndex;
+    });
+  }, [infiniteCarouselData.length]);
+
+  const startAutoScroll = useCallback(() => {
+    autoScrollIntervalRef.current = setInterval(goToNext, 3000);
+  }, [goToNext]);
+
+  const stopAutoScroll = useCallback(() => {
+    if (autoScrollIntervalRef.current) {
+      clearInterval(autoScrollIntervalRef.current);
+    }
+  }, []);
 
   useEffect(() => {
     updateWindowWidth();
@@ -42,7 +60,6 @@ const Carousel = ({ carouselData = [] }) => {
     window.addEventListener('resize', updateWindowWidth);
     window.addEventListener('resize', updateSlideWidth);
 
-    // Cleanup event listeners on unmount
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
       window.removeEventListener('resize', updateSlideWidth);
@@ -50,35 +67,47 @@ const Carousel = ({ carouselData = [] }) => {
   }, [updateWindowWidth, updateSlideWidth]);
 
   useEffect(() => {
-    autoScrollIntervalRef.current = setInterval(goToNext, 3000);
-    return () => {
-      clearInterval(autoScrollIntervalRef.current);
-    };
-  }, [goToNext]);
+    startAutoScroll();
+    return () => stopAutoScroll();
+  }, [startAutoScroll, stopAutoScroll]);
 
-  const slidesToShow = Math.ceil(windowWidth / slideWidth);
-  const maxIndex = Math.max(0, carouselData.length - slidesToShow);
+  useEffect(() => {
+    const carouselElement = carouselRef.current;
 
-  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 5 : currentIndex >= maxIndex;
-  const isPrevDisabled = currentIndex === 0;
+    // Ensure the carouselElement is available before adding listeners
+    if (carouselElement) {
+      carouselElement.addEventListener('mouseenter', stopAutoScroll);
+      carouselElement.addEventListener('mouseleave', startAutoScroll);
+
+      // Cleanup event listeners on unmount
+      return () => {
+        carouselElement.removeEventListener('mouseenter', stopAutoScroll);
+        carouselElement.removeEventListener('mouseleave', startAutoScroll);
+      };
+    }
+  }, [startAutoScroll, stopAutoScroll]);
+
+  // Calculate the transform value to achieve infinite scrolling effect
+  const totalSlides = infiniteCarouselData.length;
+  const transformValue = -(currentIndex % totalSlides) * slideWidth;
 
   return (
     <div className="relative w-full overflow-hidden" ref={carouselRef}>
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
-          transform: `translateX(-${currentIndex * slideWidth}px)`,
+          transform: `translateX(${transformValue}px)`,
         }}
       >
-        {carouselData.map((slide, index) => (
+        {infiniteCarouselData.map((slide, index) => (
           <div
             key={index}
             className="flex-shrink-0"
             style={{ width: `${slideWidth}px` }}
           >
-            <div className='bg-white hover:bg-secondary border-2  border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-8 mx-2 min-h-caraousal'>
+            <div className="bg-white hover:bg-secondary border-2 border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-8 mx-2 min-h-caraousal">
               <div className="py-6 text-center flex justify-center">
-                <Image src={slide.img} alt={slide.title} width={slide.width} height={slide.height} /> 
+                <Image src={slide.img} alt={slide.title} width={slide.width} height={slide.height} />
               </div>
               <div className="min-h-tabs-subheading">
                 <h3 className="text-tabs font-semibold text-center">{slide.title}</h3>
@@ -89,20 +118,12 @@ const Carousel = ({ carouselData = [] }) => {
         ))}
       </div>
 
-      <div className='flex justify-center pt-6'>
-        <button 
-          onClick={goToPrev}
-          disabled={isPrevDisabled} 
-          className={`me-2 ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
+      <div className="flex justify-center pt-6">
+        <button onClick={goToPrev} className="me-2">
           <Image src="/images/nav_prev.png" alt="Previous" width={33} height={33} />
         </button>
 
-        <button 
-          onClick={goToNext}
-          disabled={isNextDisabled} 
-          className={`ms-2 ${isNextDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
+        <button onClick={goToNext} className="ms-2">
           <Image src="/images/nav_next.png" alt="Next" width={33} height={33} />
         </button>
       </div>

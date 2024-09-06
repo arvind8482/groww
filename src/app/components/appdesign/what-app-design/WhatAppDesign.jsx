@@ -23,11 +23,11 @@ function WhatAppDesign() {
   return (
     <>
       <section className='py-5 xl:py-20 bg-secondary'>
-        <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6 border-b-2 border-light-black'>
+        <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6 border-b-2 border-light-black' >
           <motion.div
             className='w-full xl:w-1/2'
             initial="hidden"
-            whileInView="visible"
+            whileInView="visible"  id='figmaDesign'
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
           >
@@ -82,8 +82,8 @@ function WhatAppDesign() {
 
         <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
-            className='w-full xl:w-1/2'
-            initial="hidden"
+            className='w-full xl:w-1/2'  id='logoDesign'
+            initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
@@ -137,8 +137,8 @@ function WhatAppDesign() {
           </motion.div>
         </div>
 
-        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
-          <motion.div
+        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center' >
+          <motion.div  id='UIUXDesign'
             className='w-full xl:w-1/2'
             initial="hidden"
             whileInView="visible"

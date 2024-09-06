@@ -2,6 +2,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
 
 function WhatItConsulting() {
   // Define animation variants
@@ -21,7 +24,7 @@ function WhatItConsulting() {
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
-          whileInView="visible"
+          whileInView="visible" id='cloudIntegration'
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
@@ -69,7 +72,7 @@ function WhatItConsulting() {
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
-          whileInView="visible"
+          whileInView="visible" id='cloudMigration'
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
@@ -116,7 +119,7 @@ function WhatItConsulting() {
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"
-          whileInView="visible"
+          whileInView="visible" id='devOps'
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
@@ -163,7 +166,7 @@ function WhatItConsulting() {
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
           initial="hidden"
-          whileInView="visible"
+          whileInView="visible" id='webDevelopment'
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >

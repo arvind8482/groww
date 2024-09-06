@@ -20,7 +20,7 @@ function WhatMasterClasses() {
       <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden"
+          initial="hidden" id='toolsMasterClass'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
@@ -62,7 +62,7 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden"
+          initial="hidden" id='cloudCertificationMasterClass'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
@@ -98,7 +98,7 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden"
+          initial="hidden" id='databaseMasterClass'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
@@ -135,7 +135,7 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden"
+          initial="hidden" id='fullStackMasterClass'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}

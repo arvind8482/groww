@@ -9,6 +9,10 @@ const CarouselClients = ({ carousalData }) => {
   const [slideWidth, setSlideWidth] = useState(300);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const carouselRef = useRef(null);
+  const autoScrollIntervalRef = useRef(null);
+
+  // Create an infinite loop by duplicating the data
+  const infiniteCarouselData = [...carousalData, ...carousalData, ...carousalData];
 
   const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
@@ -32,45 +36,59 @@ const CarouselClients = ({ carousalData }) => {
 
   useEffect(() => {
     if (isAutoScrolling) {
-      const interval = setInterval(() => {
+      autoScrollIntervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => {
-          const maxIndex = windowWidth > 1023 ? 8 : carousalData.length - Math.ceil(windowWidth / slideWidth);
-          return prevIndex >= maxIndex - 1 ? 0 : prevIndex + 1;
+          const maxIndex = infiniteCarouselData.length - Math.ceil(windowWidth / slideWidth) - 1;
+          return prevIndex >= maxIndex ? 0 : prevIndex + 1;
         });
       }, 3000); // Change slide every 3 seconds
-
-      return () => clearInterval(interval);
     }
-  }, [isAutoScrolling, currentIndex, windowWidth, slideWidth, carousalData.length]);
+
+    return () => clearInterval(autoScrollIntervalRef.current);
+  }, [isAutoScrolling, currentIndex, windowWidth, slideWidth, infiniteCarouselData.length]);
 
   const goToNext = () => {
     setIsAutoScrolling(false);
     setCurrentIndex((prevIndex) => {
-      const maxIndex = windowWidth > 1023 ? carousalData.length : carousalData.length - Math.ceil(windowWidth / slideWidth);
-      return prevIndex >= maxIndex - 1 ? 0 : prevIndex + 1;
+      const maxIndex = infiniteCarouselData.length - Math.ceil(windowWidth / slideWidth);
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
     });
   };
 
   const goToPrev = () => {
     setIsAutoScrolling(false);
     setCurrentIndex((prevIndex) => {
-      const maxIndex = carousalData.length - Math.ceil(windowWidth / slideWidth);
+      const maxIndex = infiniteCarouselData.length - Math.ceil(windowWidth / slideWidth);
       return prevIndex === 0 ? maxIndex - 1 : prevIndex - 1;
     });
   };
 
-  const isNextDisabled = windowWidth > 1023 ? currentIndex >= 8 : currentIndex >= carousalData.length - Math.ceil(windowWidth / slideWidth);
-  const isPrevDisabled = currentIndex === 0;
+  const handleMouseEnter = () => {
+    setIsAutoScrolling(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsAutoScrolling(true);
+  };
+
+  // Ensure the carousel continuously loops infinitely
+  const transformValue = -(currentIndex * slideWidth);
 
   return (
-    <div className="relative w-full overflow-hidden" ref={carouselRef}>
+    <div
+      className="relative w-full overflow-hidden"
+      ref={carouselRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
-          transform: `translateX(-${currentIndex * slideWidth}px)`,
+          transform: `translateX(${transformValue}px)`,
+          width: `${slideWidth * infiniteCarouselData.length}px`, // Ensure width accommodates all slides
         }}
       >
-        {carousalData.map((slide, index) => (
+        {infiniteCarouselData.map((slide, index) => (
           <div
             key={index}
             className="flex-shrink-0"
@@ -86,16 +104,16 @@ const CarouselClients = ({ carousalData }) => {
       <div className='flex justify-center pt-6'>
         <button 
           onClick={goToPrev}
-          disabled={isPrevDisabled} 
-          className={`me-2 ${isPrevDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`me-2`}
+          disabled={currentIndex === 0}
         >
           <Image src="/images/nav_prev.png" alt="Previous" width={33} height={33} />
         </button>
 
         <button 
           onClick={goToNext}
-          disabled={isNextDisabled} 
-          className={`ms-2 ${isNextDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`ms-2 `}
+          disabled={currentIndex >= infiniteCarouselData.length - Math.ceil(windowWidth / slideWidth)}
         >
           <Image src="/images/nav_next.png" alt="Next" width={33} height={33} />
         </button>

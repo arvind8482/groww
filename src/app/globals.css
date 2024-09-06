@@ -18,11 +18,28 @@
     transition: opacity 300ms ease-in;
   } 
 
-  @media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Add styles for Swiper buttons */
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
 }
+
+.swiper-button-prev {
+  left: 10px; /* Adjust position */
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust position */
+}
+
+
  
   
 

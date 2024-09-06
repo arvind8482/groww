@@ -20,7 +20,7 @@ function Welcome() {
               At VisionGroww, we specialize in delivering top-notch IT services to help your business thrive in the digital age. Our comprehensive offerings include Web Design, App Design, IT Training, and IT Consultancy. Let us be your partner in growth and innovation.
             </p>
             <div className='flex flex-col xl:flex-row xl:items-center'>
-              <Button href="/contact-us" text="Contact Us" />
+              <Button href="/contact" text="Contact Us" />
               <Button href="/web-design" text="Our Services" />
             </div>
           </motion.div>

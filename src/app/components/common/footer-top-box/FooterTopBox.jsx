@@ -34,7 +34,7 @@ function FooterTopBox() {
                 height={63}
               />
               <div>
-                <span className='text-xl'> Call For More Info</span>
+                <span className='text-xl'> Call/Whatsapp</span>
                 <h2 className='text-contact-box-footer-small xl:text-contact-box-footer font-bold'>+91 9193924595</h2>
               </div>
             </motion.div>

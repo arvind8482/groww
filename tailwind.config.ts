@@ -39,21 +39,26 @@ const config: Config = {
       },
       minHeight: {
         'tabs-content': '440px',
+        'tabs-content-small': '360px',
         'tabs-subheading': '84px',
+        'tabs-subheading-small': '60px',
         'clientbox': '160px',
         'roadmapheading-area': '120px',
         'roadmap': '860px',
+        'roadmap-large': '620px',
         'roadmapsmall': '860px',
         'masterclasses': '960px',
+        'masterclasses-large': '700px',
         'roadmapApp': '860px',
+        'roadmapApp-large': '680px',
         'caraousal': '440px',
       },
       spacing: {
         'services': '32%',
       },
       fontSize: {
-        'default-size': ['16px', {
-          lineHeight: '28px',
+        'default-size': ['14px', {
+          lineHeight: '24px',
           letterSpacing: '-0.01em',
           fontWeight: '500',
         }],

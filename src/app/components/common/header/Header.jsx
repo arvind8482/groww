@@ -62,7 +62,7 @@ export default function Header() {
             <Image
               alt="Visiongroww"
               src="/images/logo.svg"
-              className="w-[200px] xl:w-[312px]"
+              className="w-[200px] "
               width={312}
               height={69}
             />
@@ -79,16 +79,16 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="hidden xl:flex lg:gap-x-12">
+        <div className="hidden xl:justify-end xl:flex xl:gap-x-6">
           {/* Desktop menu links */}
-          <Link href="/" className="text-xl font-semibold leading-6 text-primary">
+          <Link href="/" className="text-default-size font-semibold leading-6 text-primary">
             Home
           </Link>
           <div className="relative" ref={popoverRef}>
             <button
               type="button"
-              className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900"
-              onClick={() => setPopoverOpen(!popoverOpen)}
+              className="flex items-center gap-x-1 text-default-size font-semibold leading-6 text-gray-900" 
+              onMouseEnter={() => setPopoverOpen(!popoverOpen)} 
             >
               Services
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
@@ -111,7 +111,7 @@ export default function Header() {
                       <div className="flex-auto">
                         <Link
                           href={item.href}
-                          className="block font-semibold text-white group-hover:text-primary text-xl"
+                          className="block font-semibold text-white group-hover:text-primary text-default-size"
                           onClick={closePopover}
                         >
                           {item.name}
@@ -125,17 +125,17 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/about" className="text-xl font-semibold leading-6 text-primary">
+          <Link href="/about" className="text-default-size font-semibold leading-6 text-primary">
             About Us
           </Link>
-          <Link  href="https://medium.com/@ratanshakya999/how-to-create-a-vpc-virtual-private-cloud-in-aws-cloud-9776b55829cc"  target='_blank' className="text-xl font-semibold leading-6 text-primary">
+          <Link  href="https://medium.com/@ratanshakya999/how-to-create-a-vpc-virtual-private-cloud-in-aws-cloud-9776b55829cc"  target='_blank' className="text-default-size font-semibold leading-6 text-primary">
             Blog
           </Link>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden xl:ms-6 xl:flex xl:justify-end">
           <Link
             href="/contact"
-            className="text-xl rounded-full font-semibold px-7 border border-2 border-primary py-2 text-primary hover:border-secondary-dark2 hover:bg-btn-hover hover:text-white"
+            className="text-default-size rounded-full font-semibold px-7 border border-2 border-primary py-2 text-primary hover:border-secondary-dark2 hover:bg-btn-hover hover:text-white"
           >
             Contact Us
           </Link>
@@ -167,7 +167,7 @@ export default function Header() {
                         as="a"
                         href={item.href}
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        onClick={() => setMobileMenuOpen(false)}
+                        onClick={() => setMobileMenuOpen(false)} 
                       >
                         {item.name}
                       </DisclosureButton>
@@ -192,7 +192,7 @@ export default function Header() {
               <div className="py-6 px-6">
                 <Link
                   href="/contact"
-                  className="text-xl rounded-full font-semibold px-7 border border-2 border-primary py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white"
+                  className="text-default-size rounded-full font-semibold px-7 border border-2 border-primary py-2 text-primary hover:border-btn-hover hover:bg-btn-hover hover:text-white"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact Us

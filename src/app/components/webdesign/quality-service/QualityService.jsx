@@ -23,10 +23,10 @@ function QualityService() {
   return (
     <>
       <section className='py-5 xl:py-20 bg-secondary'>
-        <div className='container xl:px-6 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container xl:px-6 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center' id='figmaDesign'>
           <motion.div
             className='w-full xl:w-1/2'
-            initial="hidden"
+            initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
@@ -77,10 +77,10 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
+        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center' id='logoDesign'>
           <motion.div
             className='w-full xl:w-1/2'
-            initial="hidden"
+            initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
@@ -134,10 +134,10 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center' id='websiteDesign'>
           <motion.div
             className='w-full xl:w-1/2'
-            initial="hidden"
+            initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
@@ -163,7 +163,7 @@ function QualityService() {
               className='text-servicedubheading text-primary  mt-2 xl:mt-0'
               variants={textVariants}
             >
-              Website Design
+             Website Design
             </motion.h2>
             <motion.p
               className='text-default-size'
@@ -191,10 +191,10 @@ function QualityService() {
           </motion.div>
         </div>
 
-        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
+        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center' id='secureHosting'>
           <motion.div
             className='w-full xl:w-1/2'
-            initial="hidden"
+            initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
