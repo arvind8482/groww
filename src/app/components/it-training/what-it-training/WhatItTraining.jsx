@@ -36,7 +36,7 @@ function WhatItTraining() {
           >
             <Image
               src='/images/img-cloudtraining.svg'
-              className='w-full xl:w-4/5'
+              className='w-full xl:w-3/5'
               alt=''
               width={632}
               height={632}
@@ -51,12 +51,12 @@ function WhatItTraining() {
               Our Cloud & DevOps training focuses on modern practices and tools used to streamline
               development and operations processes in cloud environments. This includes:
             </p>
-            <ul className='text-default-size ps-0xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Cloud Computing Fundamentals:</strong> Understand cloud computing concepts, architecture, and service models (IaaS, PaaS, SaaS).</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Major Cloud Platforms:</strong> Gain hands-on experience with major cloud providers like AWS, Azure, and Google Cloud Platform.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>DevOps Principles:</strong> Learn about continuous integration and continuous deployment (CI/CD), infrastructure as code (IaC), and automation tools.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Containerization & Orchestration:</strong> Explore tools like Docker and Kubernetes for container management and orchestration.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Monitoring & Logging:</strong> Implement monitoring and logging solutions to ensure application reliability and performance.</li>
+            <ul className='text-default-size ps-0 pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Cloud Computing Fundamentals:</strong> Understand cloud computing concepts, architecture, and service models (IaaS, PaaS, SaaS).</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Major Cloud Platforms:</strong> Gain hands-on experience with major cloud providers like AWS, Azure, and Google Cloud Platform.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>DevOps Principles:</strong> Learn about continuous integration and continuous deployment (CI/CD), infrastructure as code (IaC), and automation tools.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Containerization & Orchestration:</strong> Explore tools like Docker and Kubernetes for container management and orchestration.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Monitoring & Logging:</strong> Implement monitoring and logging solutions to ensure application reliability and performance.</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -76,12 +76,12 @@ function WhatItTraining() {
             <p className='text-default-size'>
               Our Web Development training provides comprehensive instruction on creating and managing websites and web applications. This includes:
             </p>
-            <ul className='text-default-size ps-0xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Front-End Development:</strong> Learn HTML, CSS, and JavaScript to build responsive and interactive user interfaces.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Back-End Development:</strong> Understand server-side programming with languages like Node.js, Python, Ruby, or PHP.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Full-Stack Development:</strong> Gain skills in both front-end and back-end development, and learn to build complete web applications.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Frameworks & Libraries:</strong> Get hands-on experience with popular frameworks and libraries like React, Angular, Vue.js, and Express.js.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Database Management:</strong> Learn to work with databases, including SQL (MySQL, PostgreSQL) and NoSQL (MongoDB).</li>
+            <ul className='text-default-size ps-0 pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Front-End Development:</strong> Learn HTML, CSS, and JavaScript to build responsive and interactive user interfaces.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Back-End Development:</strong> Understand server-side programming with languages like Node.js, Python, Ruby, or PHP.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Full-Stack Development:</strong> Gain skills in both front-end and back-end development, and learn to build complete web applications.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Frameworks & Libraries:</strong> Get hands-on experience with popular frameworks and libraries like React, Angular, Vue.js, and Express.js.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Database Management:</strong> Learn to work with databases, including SQL (MySQL, PostgreSQL) and NoSQL (MongoDB).</li>
             </ul>
           </motion.div>
           <motion.div
@@ -90,7 +90,7 @@ function WhatItTraining() {
           >
             <Image
               src='/images/web-design-logo.svg'
-              className='w-full xl:w-4/5 xl:ms-auto'
+              className='w-full xl:w-3/5 xl:ms-auto'
               alt=''
               width={317}
               height={329}
@@ -125,12 +125,12 @@ function WhatItTraining() {
             <p className='text-default-size'>
               Our AI/ML training is designed to introduce participants to artificial intelligence and machine learning concepts and techniques. This includes:
             </p>
-            <ul className='text-default-sizexl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Introduction to AI/ML:</strong> Understand the fundamentals of artificial intelligence and machine learning.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Machine Learning Algorithms:</strong> Learn about supervised and unsupervised learning, including algorithms like linear regression, decision trees, and clustering.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Deep Learning:</strong> Explore neural networks, deep learning architectures, and frameworks like TensorFlow and PyTorch.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Data Preparation & Analysis:</strong> Gain skills in data preprocessing, feature engineering, and data visualization.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Real-World Applications:</strong> Apply AI/ML techniques to real-world problems and use cases.</li>
+            <ul className='text-default-size pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Introduction to AI/ML:</strong> Understand the fundamentals of artificial intelligence and machine learning.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Machine Learning Algorithms:</strong> Learn about supervised and unsupervised learning, including algorithms like linear regression, decision trees, and clustering.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Deep Learning:</strong> Explore neural networks, deep learning architectures, and frameworks like TensorFlow and PyTorch.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Data Preparation & Analysis:</strong> Gain skills in data preprocessing, feature engineering, and data visualization.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Real-World Applications:</strong> Apply AI/ML techniques to real-world problems and use cases.</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -149,18 +149,18 @@ function WhatItTraining() {
             <p className='text-default-size'>
             Our IoT training focuses on the development and implementation of interconnected devices and systems. This includes:
             </p>
-            <ul className='text-default-size ps-0xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>IoT Fundamentals :</strong> Understand the basics of IoT, including sensors, actuators, and
+            <ul className='text-default-size ps-0 pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>IoT Fundamentals :</strong> Understand the basics of IoT, including sensors, actuators, and
               communication protocols</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>IoT Architecture :</strong> Learn about the architecture and components of IoT systems,
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>IoT Architecture :</strong> Learn about the architecture and components of IoT systems,
 including edge computing and cloud integration.
  </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Device Connectivity : </strong> Explore various connectivity options such as MQTT, CoAP, and
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Device Connectivity : </strong> Explore various connectivity options such as MQTT, CoAP, and
               HTTP.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Data Collection & Analysis </strong>  Learn to collect, store, and analyze data generated by IoT
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Data Collection & Analysis </strong>  Learn to collect, store, and analyze data generated by IoT
 devices.
 </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Security & Privacy :</strong> Understand best practices for securing IoT devices and ensuring
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Security & Privacy :</strong> Understand best practices for securing IoT devices and ensuring
               data privacy.</li>  
             </ul>
           </motion.div>
@@ -170,7 +170,7 @@ devices.
           >
             <Image
               src='/images/img-iot.svg'
-              className='w-full xl:w-4/5 xl:ms-auto'
+              className='w-full xl:w-3/5 xl:ms-auto'
               alt=''
               width={317}
               height={329}

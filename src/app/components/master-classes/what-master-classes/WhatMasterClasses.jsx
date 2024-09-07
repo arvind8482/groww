@@ -31,7 +31,7 @@ function WhatMasterClasses() {
           >
             <Image
               src='/images/img-softwaredevelopment.svg'
-              className='w-full xl:w-4/5'
+              className='w-full xl:w-3/5'
               alt=''
               width={580}
               height={469}
@@ -46,16 +46,16 @@ function WhatMasterClasses() {
               Our Tools Master Class provides comprehensive training on essential tools used in modern
               development and operations. This includes:
             </p>
-            <ul className='text-default-size xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Docker:</strong> Learn containerization concepts, creating and managing containers, and using Docker for development and deployment.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Kubernetes:</strong> Understand container orchestration, deploying and managing containerized applications with Kubernetes.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Jenkins:</strong> Explore continuous integration and continuous delivery (CI/CD) pipelines, automating build and deployment processes with Jenkins.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Terraform:</strong> Master infrastructure as code (IaC) with Terraform, including provisioning and managing cloud resources.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Grafana:</strong> Learn to create dashboards and visualizations for monitoring and analyzing metrics with Grafana.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Prometheus:</strong> Understand metrics collection and monitoring with Prometheus, and integrate it with Grafana for advanced data visualization.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>GitHub:</strong> Gain skills in version control, collaboration, and code management using GitHub.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>GitLab:</strong> Explore version control, CI/CD pipelines, and project management features in GitLab.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Bitbucket:</strong> Learn version control and repository management with Bitbucket, and integrate it with other development tools.</li>
+            <ul className='text-default-size pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Docker:</strong> Learn containerization concepts, creating and managing containers, and using Docker for development and deployment.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Kubernetes:</strong> Understand container orchestration, deploying and managing containerized applications with Kubernetes.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Jenkins:</strong> Explore continuous integration and continuous delivery (CI/CD) pipelines, automating build and deployment processes with Jenkins.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Terraform:</strong> Master infrastructure as code (IaC) with Terraform, including provisioning and managing cloud resources.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Grafana:</strong> Learn to create dashboards and visualizations for monitoring and analyzing metrics with Grafana.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Prometheus:</strong> Understand metrics collection and monitoring with Prometheus, and integrate it with Grafana for advanced data visualization.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>GitHub:</strong> Gain skills in version control, collaboration, and code management using GitHub.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>GitLab:</strong> Explore version control, CI/CD pipelines, and project management features in GitLab.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Bitbucket:</strong> Learn version control and repository management with Bitbucket, and integrate it with other development tools.</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -76,10 +76,10 @@ function WhatMasterClasses() {
               Our Cloud Certification Master Class prepares participants for certification exams and provides
               hands-on experience with major cloud platforms. This includes:
             </p>
-            <ul className='text-default-size  xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>AWS (Amazon Web Services):</strong> Comprehensive training on AWS services, architecture, and best practices, preparing for AWS certification exams.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>Azure:</strong> Learn about Microsoft Azure services, solutions, and architecture, with preparation for Azure certification exams.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>GCP (Google Cloud Platform):</strong> Understand Google Cloud services, tools, and best practices, preparing for GCP certification exams.</li>
+            <ul className='text-default-size pb-6 pt-2'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>AWS (Amazon Web Services):</strong> Comprehensive training on AWS services, architecture, and best practices, preparing for AWS certification exams.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>Azure:</strong> Learn about Microsoft Azure services, solutions, and architecture, with preparation for Azure certification exams.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>GCP (Google Cloud Platform):</strong> Understand Google Cloud services, tools, and best practices, preparing for GCP certification exams.</li>
             </ul>
           </motion.div>
           <motion.div
@@ -88,7 +88,7 @@ function WhatMasterClasses() {
           >
             <Image
               src='/images/img-cloud-migrats.svg'
-              className='w-full xl:w-4/5 xl:ms-auto'
+              className='w-full xl:w-3/5 xl:ms-auto'
               alt=''
               width={472}
               height={399}
@@ -124,11 +124,11 @@ function WhatMasterClasses() {
               Our Database Master Class covers key database technologies and their applications. This
               includes:
             </p>
-            <ul className='text-default-size  xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MySQL:</strong> Learn relational database management with MySQL, including design, queries, and optimization.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>PostgreSQL:</strong> Gain expertise in PostgreSQL, an advanced relational database with support for complex queries and data types.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MongoDB:</strong> Understand NoSQL databases with MongoDB, including schema design, data modeling, and query operations.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MariaDB:</strong> Explore MariaDB as an alternative to MySQL, focusing on features, performance, and replication.</li>
+            <ul className='text-default-size pt-2 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>MySQL:</strong> Learn relational database management with MySQL, including design, queries, and optimization.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>PostgreSQL:</strong> Gain expertise in PostgreSQL, an advanced relational database with support for complex queries and data types.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>MongoDB:</strong> Understand NoSQL databases with MongoDB, including schema design, data modeling, and query operations.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>MariaDB:</strong> Explore MariaDB as an alternative to MySQL, focusing on features, performance, and replication.</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -149,9 +149,9 @@ function WhatMasterClasses() {
               Our Full Stack Master Class provides training on building end-to-end web applications using
               popular technology stacks. This includes:
             </p>
-            <ul className='text-default-size xl:py-6'>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MERN Stack:</strong> Master the MERN stack (MongoDB, Express.js, React, Node.js) for developing modern web applications with a JavaScript-based stack.</li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'><strong>MEAN Stack:</strong> Explore the MEAN stack (MongoDB, Express.js, Angular, Node.js) for building scalable web applications with a focus on Angular.</li>
+            <ul className='text-default-size pb-6 pt-2'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>MERN Stack:</strong> Master the MERN stack (MongoDB, Express.js, React, Node.js) for developing modern web applications with a JavaScript-based stack.</li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'><strong>MEAN Stack:</strong> Explore the MEAN stack (MongoDB, Express.js, Angular, Node.js) for building scalable web applications with a focus on Angular.</li>
             </ul>
           </motion.div>
           <motion.div
@@ -160,7 +160,7 @@ function WhatMasterClasses() {
           >
             <Image
               src='/images/img-fullstack.svg'
-              className='w-full xl:w-4/5 xl:ms-auto'
+              className='w-full xl:w-3/5 xl:ms-auto'
               alt=''
               width={566}
               height={548}

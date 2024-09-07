@@ -23,8 +23,8 @@ function WhatAppDesign() {
   return (
     <>
       <section className='py-5 xl:py-20 bg-secondary'>
-        <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6 border-b-2 border-light-black' >
-          <motion.div
+        <div className='container xl:px-6 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
+           <motion.div
             className='w-full xl:w-1/2'  id='figmaDesign'
             initial="hidden"
             whileInView="visible" 
@@ -33,11 +33,11 @@ function WhatAppDesign() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-figma.svg'
-                className='w-full xl:w-4/5'
-                alt=''
-                width={432}
-                height={244}
+                 src='/images/web-design-figma.svg'
+                 className='w-full xl:w-3/5'
+                 alt=''
+                 width={432}
+                 height={244}
               />
             </motion.div>
           </motion.div>
@@ -61,19 +61,19 @@ function WhatAppDesign() {
               We utilize Figma, a leading collaborative design tool, to create high-fidelity wireframes and interactive prototypes for your mobile application. This process includes:
             </motion.p>
             <motion.ul
-              className='text-default-size  ps-0 xl:py-6'
+              className='text-default-size  ps-0 pt-2 pb-6'
               variants={textVariants}
             >
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Conceptualization :</strong> Translating your ideas into visual representations.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Interactive Prototypes :</strong> Developing interactive models to demonstrate the app&apos;s flow and functionality.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Real-Time Collaboration :</strong> Working closely with you to refine designs and ensure alignment with your vision.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Detailed Specifications :</strong> Providing detailed design specifications to guide the development process.
               </li>
             </motion.ul>
@@ -101,19 +101,19 @@ function WhatAppDesign() {
               Your app&apos;s logo is a critical element of its brand identity. Our logo design process involves:
             </motion.p>
             <motion.ul
-              className='text-default-size  ps-0 xl:py-6'
+              className='text-default-size  ps-0 pt-2 pb-6'
               variants={textVariants}
             >
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Brand Discovery :</strong> Understanding your app&apos;s purpose, target audience, and brand personality.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Concept Generation :</strong> Creating multiple logo concepts that embody your app&apos;s essence.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Feedback & Refinement :</strong> Collaborating with you to select and refine the best concept.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Final Delivery :</strong> Providing the finalized logo in various formats for use across different platforms.
               </li>
             </motion.ul>
@@ -128,7 +128,7 @@ function WhatAppDesign() {
             <motion.div variants={imageVariants}>
               <Image
                 src='/images/web-design-logo.svg'
-                className='w-full xl:w-4/5 xl:ms-auto'
+                className='w-full xl:w-3/5 xl:ms-auto'
                 alt=''
                 width={317}
                 height={329}
@@ -175,25 +175,25 @@ function WhatAppDesign() {
               User Interface (UI) and User Experience (UX) design are at the heart of our app design services. We focus on creating intuitive and engaging user experiences that keep your users coming back. This includes:
             </motion.p>
             <motion.ul
-              className='text-default-size ps-0xl:py-6'
+              className='text-default-size ps-0 pt-2 pb-6'
               variants={textVariants}
             >
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>User Research :</strong> Conducting thorough research to understand your users&apos; needs and preferences.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Information Architecture :</strong> Structuring the app&apos;s information in a logical and user-friendly manner.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Wireframing :</strong> Developing wireframes to outline the app&apos;s layout and flow.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Visual Design :</strong> Crafting visually appealing interfaces that align with your brand identity.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Interaction Design :</strong> Designing interactive elements that enhance the user experience.
               </li>
-              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6'>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
                 <strong>Usability Testing :</strong> Conducting tests to ensure the app is easy to use and navigate.
               </li>
             </motion.ul>
