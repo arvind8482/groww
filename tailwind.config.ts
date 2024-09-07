@@ -72,8 +72,8 @@ const config: Config = {
           letterSpacing: '-0.01em',
           fontWeight: '500',
         }],
-        'tabs': ['24px', {
-          lineHeight: '38px',
+        'tabs': ['20px', {
+          lineHeight: '20px',
           letterSpacing: '-0.01em',
           fontWeight: '500', 
         }],
