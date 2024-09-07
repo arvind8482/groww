@@ -92,7 +92,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
             className="flex-shrink-0"
             style={{ width: `${slideWidth}px` }}
           >
-            <div className='bg-white hover:bg-secondary border-2 border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-6 xl:p-8 mx-1 xl:mx-2 min-h-roadmap 2xl:min-h-roadmap-large'>
+            <div className='bg-white hover:bg-secondary border-2 border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-6 xl:p-8 mx-1 xl:mx-2 min-h-roadmap-large'>
               <div className="flex flex-col xl:p-6 justify-center">
                 <div className='min-h-roadmapheading-area'>
                   <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>
