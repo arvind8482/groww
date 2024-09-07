@@ -17,12 +17,12 @@ function Footer() {
                            </div>
                    </div>
                    <div className='w-full xl:w-1/3 border-0  xl:border-e xl:border-light xl:p-6'>
-                            <diiv className="flex justify-between items-center border-b border-t xl:border-0 border-light py-6 xl:p-0">
+                            <diiv className="flex justify-between items-top border-b border-t xl:border-0 border-light py-6 xl:p-0">
                                         <div className='flex flex-col text-xl'>
                                             <Link href="/web-design" className='mb-4'>Web Design</Link>
                                             <Link href="/app-design" className='mb-4'>App Design</Link>
-                                            <Link href="/it-consulting" className='mb-4'>It Consulting</Link>
-                                            <Link href="/it-training" className='mb-4'>It Training</Link>
+                                            <Link href="/it-consulting" className='mb-4'>IT Consulting</Link>
+                                            <Link href="/it-training" className='mb-4'>IT Training</Link>
                                             <Link href="/master-classes" className='mb-4'>Master Classes</Link>
                                         </div>
                                         <div className='flex flex-col  text-xl'>

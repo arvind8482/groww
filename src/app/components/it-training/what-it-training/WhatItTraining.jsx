@@ -25,13 +25,13 @@ function WhatItTraining() {
       <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden" id='cloudDevOpsTraining'
+          initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2'  id='cloudDevOpsTraining'
             variants={imageVariants}
           >
             <Image
@@ -43,7 +43,7 @@ function WhatItTraining() {
             />
           </motion.div>
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={textVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>Cloud & DevOps Training</h2>
@@ -63,13 +63,13 @@ function WhatItTraining() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden" id='webDevelopmentTraining'
+          initial="hidden"  id='webDevelopmentTraining'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={textVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>Web Development Training</h2>
@@ -100,8 +100,8 @@ function WhatItTraining() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden" id='AIMLTraining'
-          whileInView="visible"
+          initial="hidden"
+          whileInView="visible"   id='AIMLTraining'
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
@@ -136,7 +136,7 @@ function WhatItTraining() {
         </motion.div>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden" id='IotTraining'
+          initial="hidden"   id='IotTraining'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}

@@ -23,8 +23,8 @@ function WhatItConsulting() {
       <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden"
-          whileInView="visible" id='cloudIntegration'
+          initial="hidden"  id='cloudIntegration'
+          whileInView="visible" 
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
@@ -71,13 +71,13 @@ function WhatItConsulting() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden"
-          whileInView="visible" id='cloudMigration'
+          initial="hidden"  id='cloudMigration'
+          whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={itemVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>Cloud Migration</h2>
@@ -118,8 +118,8 @@ function WhatItConsulting() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden"
-          whileInView="visible" id='devOps'
+          initial="hidden"  id='devOps'
+          whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
@@ -136,7 +136,7 @@ function WhatItConsulting() {
             />
           </motion.div>
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={itemVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>DevOps</h2>
@@ -165,8 +165,8 @@ function WhatItConsulting() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden"
-          whileInView="visible" id='webDevelopment'
+          initial="hidden"   id='webDevelopment'
+          whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >

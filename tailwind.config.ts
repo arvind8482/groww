@@ -97,8 +97,8 @@ const config: Config = {
           letterSpacing: '-0.01em',
           fontWeight: '600',
         }],
-        'welcome-small': ['24px', {
-          lineHeight: '38px',
+        'welcome-small': ['20px', {
+          lineHeight: '20px',
           letterSpacing: '-0.01em',
           fontWeight: '600',
         }],

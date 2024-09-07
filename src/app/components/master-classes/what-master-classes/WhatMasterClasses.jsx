@@ -20,13 +20,13 @@ function WhatMasterClasses() {
       <section className='py-5 xl:py-20 bg-secondary'>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden" id='toolsMasterClass'
+          initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2'   id='toolsMasterClass'
             variants={itemVariants}
           >
             <Image
@@ -62,7 +62,7 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden" id='cloudCertificationMasterClass'
+          initial="hidden"   id='cloudCertificationMasterClass'
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
@@ -98,13 +98,13 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
-          initial="hidden" id='databaseMasterClass'
+          initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2'  id='databaseMasterClass'
             variants={itemVariants}
           >
             <Image
@@ -116,7 +116,7 @@ function WhatMasterClasses() {
             />
           </motion.div>
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={itemVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>Database Master Class</h2>
@@ -135,13 +135,13 @@ function WhatMasterClasses() {
 
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'
-          initial="hidden" id='fullStackMasterClass'
-          whileInView="visible"
+          initial="hidden"
+          whileInView="visible"  id='fullStackMasterClass'
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2' 
             variants={itemVariants}
           >
             <h2 className='text-servicedubheading text-primary mt-2 xl:mt-0'>Full Stack Master Class</h2>

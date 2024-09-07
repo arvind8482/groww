@@ -25,9 +25,9 @@ function WhatAppDesign() {
       <section className='py-5 xl:py-20 bg-secondary'>
         <div className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6 border-b-2 border-light-black' >
           <motion.div
-            className='w-full xl:w-1/2'
+            className='w-full xl:w-1/2'  id='figmaDesign'
             initial="hidden"
-            whileInView="visible"  id='figmaDesign'
+            whileInView="visible" 
             viewport={{ once: true, amount: 0.2 }}
             variants={sectionVariants}
           >
@@ -49,7 +49,7 @@ function WhatAppDesign() {
             variants={sectionVariants}
           >
             <motion.h2
-              className='text-servicedubheading text-primary  mt-2 xl:mt-0'
+              className='text-servicedubheading text-primary  mt-2 xl:mt-0' 
               variants={textVariants}
             >
               Figma Design
@@ -82,7 +82,7 @@ function WhatAppDesign() {
 
         <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
-            className='w-full xl:w-1/2'  id='logoDesign'
+            className='w-full xl:w-1/2'    id='logoDesign'
             initial="hidden" 
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -138,8 +138,8 @@ function WhatAppDesign() {
         </div>
 
         <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center' >
-          <motion.div  id='UIUXDesign'
-            className='w-full xl:w-1/2'
+          <motion.div 
+            className='w-full xl:w-1/2'  id='UIUXDesign'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -163,7 +163,7 @@ function WhatAppDesign() {
             variants={sectionVariants}
           >
             <motion.h2
-              className='text-servicedubheading text-primary  mt-2 xl:mt-0'
+              className='text-servicedubheading text-primary  mt-2 xl:mt-0' 
               variants={textVariants}
             >
               UI/UX Design
