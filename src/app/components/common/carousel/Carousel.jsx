@@ -109,7 +109,7 @@ const Carousel = ({ carouselData = [] }) => {
               <div className="py-6 text-center flex justify-center">
                 <Image src={slide.img} alt={slide.title} width={slide.width} height={slide.height} />
               </div>
-              <div className="min-h-tabs-subheading">
+              <div className="min-h-why-subheading">
                 <h3 className="text-tabs font-semibold text-center">{slide.title}</h3>
               </div>
               <p className="text-default-size text-center">{slide.content}</p>

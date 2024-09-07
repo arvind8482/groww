@@ -41,6 +41,7 @@ const config: Config = {
         'tabs-content': '440px',
         'tabs-content-small': '360px',
         'tabs-subheading': '60px',
+        'why-subheading': '40px',
         'tabs-subheading-small': '60px',
         'clientbox': '160px',
         'roadmapheading-area': '88px',
@@ -53,7 +54,7 @@ const config: Config = {
         'masterclasses-large': '700px',
         'roadmapApp': '860px',
         'roadmapApp-large': '680px',
-        'caraousal': '400px',
+        'caraousal': '380px',
       },
       spacing: {
         'services': '32%',
