@@ -108,9 +108,9 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
                 <strong>{slide.percentage}% Completed</strong>  
               </div> 
               <div>
-                <ul className='text-default-size ps-6 py-6'>
+                <ul className='text-default-size ps-6 pt-6'>
                   {slide.content.map((item, index) => (
-                    <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-6' key={index}>
+                    <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1' key={index}>
                       <strong>{item.strong}:</strong> {item.content}
                     </li>
                   ))}
