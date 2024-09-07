@@ -118,7 +118,7 @@ const Carousel = ({ carouselData = [] }) => {
         ))}
       </div>
 
-      <div className="flex justify-center pt-6">
+      <div className="flex justify-center pt-2">
         <button onClick={goToPrev} className="me-2">
           <Image src="/images/nav_prev.png" alt="Previous" width={33} height={33} />
         </button>

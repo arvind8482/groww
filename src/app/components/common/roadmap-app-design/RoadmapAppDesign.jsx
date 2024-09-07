@@ -93,8 +93,8 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
             className="flex-shrink-0"
             style={{ width: `${slideWidth}px` }}
           >
-            <div className='bg-white hover:bg-secondary border-2 border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-6 mx-1 xl:mx-2 min-h-roadmap-app'>
-              <div className="flex flex-col xl:p-6 justify-center">
+            <div className='bg-white hover:bg-secondary border-2 border-secondary-dark transition ease-in-out hover:shadow-none rounded-2xl p-3 mx-1 xl:mx-2 min-h-roadmap-app'>
+              <div className="flex flex-col p-3 justify-center">
                 <div className='min-h-roadmapheading-area'>
                   <h4 className='text-primary text-roadmap-subheading'>{slide.subtitle}</h4>
                   <h3 className='text-primary text-roadmap-heading'>{slide.title}</h3>
@@ -122,7 +122,7 @@ const RoadmapAppDesign = ({ roaadmapData = [] }) => {
         ))}
       </div>
 
-      <div className='flex justify-center pt-6'>
+      <div className='flex justify-center pt-2'>
         <button 
           onClick={goToPrev}
           disabled={currentIndex === 0} 
