@@ -4,7 +4,7 @@ import AboutItConsulting from '../components/it-consulting/about-it-consulting/A
 import Roadmap from '../components/it-consulting/roadmap/Roadmap'  
 import FooterTopBox from '../components/common/footer-top-box/FooterTopBox' 
 export const metadata = {
-  title: "It Consulting - Vision Groww",
+  title: "IT Consulting - Vision Groww",
   description: "",
 };
 function Page() {

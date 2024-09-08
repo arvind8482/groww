@@ -4,7 +4,7 @@ import AboutItTraining from '../components/it-training/about-it-training/AboutIt
 import Roadmap from '../components/it-training/roadmap/Roadmap'  
 import FooterTopBox from '../components/common/footer-top-box/FooterTopBox' 
 export const metadata = {
-  title: "It Training - Vision Groww",
+  title: "IT Training - Vision Groww",
   description: "",
 };
 function Page() {
