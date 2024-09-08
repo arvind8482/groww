@@ -36,7 +36,7 @@ function AboutItTraining() {
             variants={imageVariants}
           >
             <Image
-              src="/images/web-design-1.svg"
+              src="/images/img-it-training.svg"
               width={619} className='w-full xl:w-4/5'
               height={368}
               alt=""

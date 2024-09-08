@@ -31,7 +31,7 @@ function AboutMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src="/images/web-design-1.svg"
+              src="/images/img-master-classes.svg"
               width={619} className='w-full xl:w-4/5'
               height={368}
               alt=""

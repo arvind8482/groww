@@ -36,8 +36,8 @@ function WhatWebDesign() {
             variants={imageVariants}
           >
             <Image
-              src="/images/web-design-1.svg"
-              width={619}   className='w-full xl:w-4/5 '
+              src="/images/img-webdeign.svg"
+              width={619}   className='w-full xl:w-3/5 '
               height={368}
               alt=""
             />
