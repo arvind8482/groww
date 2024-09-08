@@ -1,4 +1,4 @@
-'use client'; // Ensure this component is treated as a client component
+'use client';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
 
@@ -10,8 +10,6 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
   const carouselRef = useRef(null);
   const autoScrollIntervalRef = useRef(null);
 
-  // Create an infinite loop by duplicating the data 
-  const infiniteRoadmapData = Array(100).fill(roaadmapData).flat(); 
   const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
       const carouselWidth = carouselRef.current.offsetWidth;
@@ -61,16 +59,13 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
     });
   };
 
-  const handleMouseEnter = () => {
-    setIsAutoScrolling(false);
-  };
+  const handleMouseEnter = () => setIsAutoScrolling(false);
+  const handleMouseLeave = () => setIsAutoScrolling(true);
 
-  const handleMouseLeave = () => {
-    setIsAutoScrolling(true);
-  };
-
-  // Calculate the transform value for infinite scroll
   const transformValue = -currentIndex * slideWidth;
+
+  // Ensure data is available before rendering
+  const infiniteRoadmapData = Array(100).fill(roaadmapData).flat(); 
 
   return (
     <div
@@ -83,7 +78,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
         className="flex transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(${transformValue}px)`,
-          width: `${slideWidth * infiniteRoadmapData.length}px`, // Ensure width accommodates all slides
+          width: `${slideWidth * infiniteRoadmapData.length}px`,
         }}
       >
         {infiniteRoadmapData.map((slide, index) => (
@@ -101,7 +96,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
                 <Image
                   src={slide.img} alt={slide.title}
                   width={122}
-                  height={2}
+                  height={122} // Adjust height as needed
                 />
               </div>
               <div className='py-2 px-6'>
@@ -121,12 +116,11 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
       <div className='flex justify-center pt-2'>
         <button 
           onClick={goToPrev}
           disabled={currentIndex === 0} 
-          className={`me-2 `}
+          className={`me-2`}
         >
           <Image src="/images/nav_prev.png" alt="Previous" width={33} height={33} />
         </button>
@@ -134,7 +128,7 @@ const RoadmapWebDesign = ({ roaadmapData = [] }) => {
         <button 
           onClick={goToNext}
           disabled={currentIndex >= infiniteRoadmapData.length - Math.ceil(windowWidth / slideWidth)} 
-          className={`ms-2 `}
+          className={`ms-2`}
         >
           <Image src="/images/nav_next.png" alt="Next" width={33} height={33} />
         </button>

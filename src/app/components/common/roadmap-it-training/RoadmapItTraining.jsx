@@ -10,10 +10,9 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
   const carouselRef = useRef(null);
   const autoScrollIntervalRef = useRef(null);
 
-  // Create an infinite loop by duplicating the data 
+  // Create an infinite loop by duplicating the data
   const infiniteRoadmapData = Array(100).fill(roaadmapData).flat(); 
 
-  // Function to update slide width based on the current window width
   const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
       const carouselWidth = carouselRef.current.offsetWidth;
@@ -22,7 +21,6 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     }
   }, [windowWidth]);
 
-  // Effect to handle window resizing and initial setup
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -35,7 +33,6 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [updateSlideWidth]);
 
-  // Auto-scroll logic
   useEffect(() => {
     if (isAutoScrolling) {
       autoScrollIntervalRef.current = setInterval(() => {
@@ -49,7 +46,6 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     return () => clearInterval(autoScrollIntervalRef.current); // Cleanup interval on unmount
   }, [isAutoScrolling, windowWidth, slideWidth, infiniteRoadmapData.length]);
 
-  // Function to go to the next slide
   const goToNext = () => {
     setIsAutoScrolling(false);
     setCurrentIndex(prevIndex => {
@@ -58,7 +54,6 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     });
   };
 
-  // Function to go to the previous slide
   const goToPrev = () => {
     setIsAutoScrolling(false);
     setCurrentIndex(prevIndex => {
@@ -67,16 +62,16 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     });
   };
 
-  const handleMouseEnter = () => {
-    setIsAutoScrolling(false);
-  };
+  const handleMouseEnter = () => setIsAutoScrolling(false);
+  const handleMouseLeave = () => setIsAutoScrolling(true);
 
-  const handleMouseLeave = () => {
-    setIsAutoScrolling(true);
-  };
-
-  // Calculate the transform value for infinite scroll
   const transformValue = -currentIndex * slideWidth;
+
+  // Debugging logs
+  console.log('currentIndex:', currentIndex);
+  console.log('slideWidth:', slideWidth);
+  console.log('windowWidth:', windowWidth);
+  console.log('transformValue:', transformValue);
 
   return (
     <div
@@ -107,14 +102,14 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
                 <Image
                   src={slide.img} alt={slide.title}
                   width={122}
-                  height={2}
+                  height={122} // Adjust height as needed
                 />
               </div>
               <div className='py-2 px-1 xl:px-6'>
                 <strong>{slide.percentage}% Completed</strong>  
               </div> 
               <div>
-                <ul className='text-default-size  ps-6 pt-2'>
+                <ul className='text-default-size ps-6 pt-2'>
                   {slide.content.map((item, index) => (
                     <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1' key={index}>
                       <strong>{item.strong}:</strong> {item.content}
@@ -127,7 +122,6 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
       <div className='flex justify-center pt-2'>
         <button 
           onClick={goToPrev}
