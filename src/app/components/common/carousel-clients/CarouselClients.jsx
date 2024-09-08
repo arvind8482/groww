@@ -94,7 +94,7 @@ const CarouselClients = ({ carousalData }) => {
             className="flex-shrink-0"
             style={{ width: `${slideWidth}px` }}
           >
-            <div className='bg-white border-2 border-secondary-dark rounded-xl p-8 mx-2 flex justify-center hover:scale-90 transition ease-in-out items-center min-h-clientbox'>
+            <div className='bg-white border-2 border-secondary-dark rounded-xl p-8 mx-1 xl:mx-2 flex justify-center hover:scale-90 transition ease-in-out items-center min-h-clientbox'>
               <Image src={slide.img} alt={slide.title} width={slide.width} height={slide.height} />
             </div>
           </div>
