@@ -147,7 +147,7 @@ function WhatAppDesign() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-website.svg'
+                src='/images/app-uiux.svg'
                 className='w-full xl:w-3/5 xl:me-auto'
                 alt=''
                 width={432}
@@ -199,7 +199,62 @@ function WhatAppDesign() {
             </motion.ul>
           </motion.div>
         </div>
-
+        <div className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
+          <motion.div   id='secureHosting'
+            className='w-full xl:w-1/2'
+            initial="hidden" 
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={sectionVariants}
+          >
+            <motion.h2
+              className='text-servicedubheading text-primary  mt-2 xl:mt-0'
+              variants={textVariants}
+            >
+              Secure Hosting & 3 Months of Free Maintenance
+            </motion.h2>
+            <motion.p
+              className='text-default-size'
+              variants={textVariants}
+            >
+              To ensure your website is always online and performing at its best, we offer secure hosting and ongoing maintenance services:
+            </motion.p>
+            <motion.ul
+              className='text-default-size ps-0 pt-2 pb-6'
+              variants={textVariants}
+            >
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
+                <strong>Secure Hosting : </strong> Provide reliable, secure, and fast hosting solutions that protect your website from cyber threats and ensure optimal performance
+              </li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
+                <strong>Regular Updates :</strong> Keep your website up-to-date with the latest security patches and feature enhancements.
+              </li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
+                <strong>Performance Monitoring : </strong> Continuously monitor your website&apos;s performance to identify and resolve any issues promptly.
+              </li>
+              <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1'>
+                <strong>Support & Maintenance :</strong> Offer three months of free maintenance, including technical support and minor updates, to ensure your website remains in top condition post-launch.
+              </li>
+            </motion.ul>
+          </motion.div>
+          <motion.div
+            className='w-full xl:w-1/2'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={sectionVariants}
+          >
+            <motion.div variants={imageVariants}>
+              <Image
+                src='/images/web-design-hosting2.svg'
+             className='w-full xl:w-3/5 xl:ms-auto'
+                alt=''
+                width={406}
+                height={511}
+              />
+            </motion.div>
+          </motion.div>
+        </div>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 text-center xl:px-0 mx-auto'
           initial="hidden"

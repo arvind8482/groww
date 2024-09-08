@@ -144,7 +144,7 @@ function QualityService() {
           >
             <motion.div variants={imageVariants}>
               <Image
-                src='/images/web-design-website.svg'
+                src='/images/web-design-website2.svg'
                 className='w-full xl:w-3/5 xl:me-auto'
                 alt=''
                 width={432}

@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
             variants={containerVariants}
           >
             <Image
-              src="/images/img-whatwedo.svg"
+              src="/images/img-whychoose2.svg"
               className='w-full'
               alt=''
               width={618}

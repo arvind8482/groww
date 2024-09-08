@@ -9,7 +9,7 @@ import SectionHeading from '../../common/section-heading/SectionHeading';
     width:97,
     height:103,
     title: 'Comprehensive Service Offerings', 
-    content: `At VisionGroww, we provide a wide range of services including Web Design, App Design, IT Training, IT Consultancy, and Master Classes. Our diverse portfolio ensures that all your IT and design needs are met under one roof.`,
+    content: `At VisionGroww, we provide a wide range of services including Web Design, App Design, IT Training, IT Consultancy.`,
   },
   {
     img: '/images/why-icon-2.svg',

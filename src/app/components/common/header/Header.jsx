@@ -68,7 +68,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <button
             type="button"
             onClick={handleMobileSmallScreen}  

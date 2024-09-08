@@ -108,7 +108,7 @@ function WhatMasterClasses() {
             variants={itemVariants}
           >
             <Image
-              src='/images/web-design-hosting.svg'
+              src='/images/img-database.svg'
               className='w-full xl:w-3/5 xl:me-auto'
               alt=''
               width={406}

@@ -70,6 +70,14 @@
           img: '/images/services-icon-ux.svg',
           content: 'User Interface (UI) and User Experience (UX) design are at the heart of our app design services.'
         },
+        {
+          heading: 'Secure Hosting',
+          img: '/images/services-icon-secure-hosting.svg',
+          width:78,
+          height:79,
+          link:'/web-design#secureHosting',
+          content: 'Enjoy robust and secure hosting for your website, along with three months of complimentary maintenance.'
+        },
       ],
         link:'/app-design'
     },
