@@ -7,7 +7,7 @@ import RoadmapAppDesign from '../../common/roadmap-app-design/RoadmapAppDesign'
 const roaadmapData = [
   {
     img: '/images/roadmap-line.png',
-    title: '1: Initial Consultation & Requirement Gathering', 
+    title: 'Initial Consultation & Requirement Gathering', 
     subtitle: 'Phase 01', 
     percentage:0, 
     content: [

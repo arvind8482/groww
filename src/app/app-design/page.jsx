@@ -1,6 +1,5 @@
     
-import React from 'react' 
-import Head from 'next/head'
+import React from 'react'  
 import WhatAppDesign from '../components/appdesign/what-app-design/WhatAppDesign' 
 import AboutAppDesign from '../components/appdesign/about-app-design/AboutAppDesign'
 import Roadmap from '../components/appdesign/roadmap/RoadMap'
