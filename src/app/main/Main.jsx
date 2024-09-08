@@ -1,5 +1,4 @@
-'use client';
-import React from 'react'
+ import React from 'react'
 import Head from 'next/head';
 import Welcome from '../components/home/welcome/Welcome'
 import Services from '../components/home/services/Services'
@@ -13,7 +12,7 @@ function Main() {
   return (
     <>
        <Head>
-        <title>About Us - Vision Groww</title>
+        <title>Vision Groww </title>
         <meta name="description" content="Learn more about us, what we do, and why you should choose us." />
       </Head>
         <Welcome/>
