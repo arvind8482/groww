@@ -84,7 +84,7 @@ function ClientSection() {
   return (
     <section className='py-12 bg-white'>
       <div className='container mx-auto'>
-        <SectionHeading subheading="Our" heading="Tools" align="text-center" line="mx-auto" />
+        <SectionHeading subheading="Our" heading="Training Tools" align="text-center" line="mx-auto" />
         <CarouselClients carousalData={clientsData} /> {/* Updated here */}
       </div>
     </section>
