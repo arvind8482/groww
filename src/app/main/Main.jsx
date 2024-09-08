@@ -10,11 +10,7 @@ import ClientSection from '../components/home/client-section/ClientScreen'
 
 function Main() {
   return (
-    <>
-       <Head>
-        <title>Vision Groww </title>
-        <meta name="description" content="Learn more about us, what we do, and why you should choose us." />
-      </Head>
+    <> 
         <Welcome/>
         <Services/>
         <WhyVisionGroww/>
