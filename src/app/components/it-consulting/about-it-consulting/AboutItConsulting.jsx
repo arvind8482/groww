@@ -37,7 +37,7 @@ function AboutItConsulting() {
           >
             <Image
               src="/images/web-design-1.svg"
-              width={619}     className='w-full xl:w-4/5'
+              width={619}     className='w-full xl:w-3/5'
               height={368}
               alt=""
             />
