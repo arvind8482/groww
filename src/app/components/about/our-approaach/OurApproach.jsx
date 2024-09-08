@@ -18,7 +18,7 @@ const OurApproach = () => {
 
   return (
     <>
-      <section className='py-5 xl:py-20 bg-secondary'>
+      <section className='py-5   xl:py-20 px-8 xl:px-0  bg-secondary'>
         <div className='container xl:px-6 xl:px-0 mx-auto flex flex-col-reverse xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2 pt-2 xl:pt-0'

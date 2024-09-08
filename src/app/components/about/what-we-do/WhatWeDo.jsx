@@ -5,7 +5,7 @@ import SectionHeadingTwoLine from '../../common/section-heading-twoline/SectionH
 function WhatWeDo() {
   return (
     <>
-     <section className='py-5 xl:py-20 xl:space-x-6 bg-white'>
+     <section className='py-5 xl:py-20 px-8 xl:px-0  xl:space-x-6 bg-white'>
             <div className='container  mx-auto flex flex-col xl:flex-row xl:items-center'>
             <div className='w-full xl:w-1/2 mb-2 xl:mb-0 xl:me-6'>
             <Image

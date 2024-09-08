@@ -201,7 +201,7 @@
     const [activeTabIndex, setActiveTabIndex] = useState(0);
   
     return (
-      <section className='py-12 bg-secondary overflow-hidden' >
+      <section className='py-12 px-8 xl:px-0  bg-secondary overflow-hidden' >
         <div className='container mx-auto'>
           <SectionHeading subheading="Our Services" heading="Anything tech, Everything tech!" align="text-center" line="mx-auto" /> 
           <div className="flex flex-col px-6 xl:px-0 mb-6 xl:flex-row xl:space-x-3 justify-center">

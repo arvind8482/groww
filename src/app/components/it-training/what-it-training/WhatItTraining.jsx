@@ -22,7 +22,7 @@ function WhatItTraining() {
 
   return (
     <>
-      <section className='py-5 xl:py-20 bg-secondary'>
+      <section className='py-5 xl:py-20 px-8 xl:px-0  bg-secondary'>
         <motion.div
           className='container xl:px-6 py-5 xl:py-12 border-b-2 border-light-black xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'
           initial="hidden"

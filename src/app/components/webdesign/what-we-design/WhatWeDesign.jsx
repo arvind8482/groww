@@ -23,7 +23,7 @@ function WhatWebDesign() {
 
   return (
     <>
-      <section className='py-5 xl:py-20  bg-white'>
+      <section className='py-5 xl:py-20 px-8 xl:px-0 bg-white'>
         <motion.div
           className='container mx-auto flex flex-col xl:items-center xl:flex-row xl:space-x-6'
           initial="hidden"

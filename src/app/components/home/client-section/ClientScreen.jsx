@@ -82,7 +82,7 @@ const clientsData = [
 
 function ClientSection() {
   return (
-    <section className='py-12 bg-white'>
+    <section className='py-12 px-8 xl:px-0  bg-white'>
       <div className='container mx-auto'>
         <SectionHeading subheading="Our" heading="Training Tools" align="text-center" line="mx-auto" />
         <CarouselClients carousalData={clientsData} /> {/* Updated here */}

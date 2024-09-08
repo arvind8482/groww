@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
 
   return (
     <>
-      <section className='py-5 xl:py-20 bg-white'>
+      <section className='py-5 xl:py-20 px-8 xl:px-0  bg-white'>
         <div className='container xl:px-6 xl:px-0 mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div
             className='w-full xl:w-1/2 xl:me-6'

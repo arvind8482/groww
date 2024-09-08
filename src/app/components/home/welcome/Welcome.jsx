@@ -12,7 +12,7 @@ const fadeInUp = {
 function Welcome() {
   return (
     <>
-      <section className='py-10 px-6 xl:px-0'>
+      <section className='py-10 px-8 xl:px-0 xl:px-0'>
         <div className='container mx-auto flex flex-col xl:flex-row xl:items-center'>
           <motion.div className='w-full xl:w-1/2' initial="hidden" whileInView="visible" variants={fadeInUp} viewport={{ once: true }}>
             <h1 className='text-welcome-small xl:text-welcome'>Welcome to VisionGroww</h1>
