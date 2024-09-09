@@ -37,7 +37,7 @@ const AboutAppDesign = () => {
             >
               <Image
                 src="/images/img-app-design.svg"
-                width={619}   className='w-full xl:w-3/5 '
+                width={619}   className='w-full xl:w-6/12'
                 height={368}
                 alt=""
               />
