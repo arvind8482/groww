@@ -7,13 +7,19 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [slideWidth, setSlideWidth] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [infiniteRoadmapData, setInfiniteRoadmapData] = useState([]);
   const carouselRef = useRef(null);
   const autoScrollIntervalRef = useRef(null);
 
-  // Create an infinite loop by duplicating the data 
-  const infiniteRoadmapData = Array(100).fill(roaadmapData).flat(); 
+  // Set up infinite roadmap data whenever roaadmapData changes
+  useEffect(() => {
+    if (roaadmapData.length) {
+      setInfiniteRoadmapData(Array(100).fill(roaadmapData).flat());
+      setCurrentIndex(0); // Reset current index when data changes
+    }
+  }, [roaadmapData]);
 
-  // Function to update slide width based on the current window width
+  // Update slide width based on window width
   const updateSlideWidth = useCallback(() => {
     if (carouselRef.current) {
       const carouselWidth = carouselRef.current.offsetWidth;
@@ -22,7 +28,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     }
   }, [windowWidth]);
 
-  // Effect to handle window resizing and initial setup
+  // Handle window resize
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -35,7 +41,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [updateSlideWidth]);
 
-  // Auto-scroll logic
+  // Set up auto-scrolling
   useEffect(() => {
     if (isAutoScrolling) {
       autoScrollIntervalRef.current = setInterval(() => {
@@ -49,7 +55,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     return () => clearInterval(autoScrollIntervalRef.current); // Cleanup interval on unmount
   }, [isAutoScrolling, windowWidth, slideWidth, infiniteRoadmapData.length]);
 
-  // Function to go to the next slide
+  // Navigate to next slide
   const goToNext = () => {
     setIsAutoScrolling(false);
     setCurrentIndex(prevIndex => {
@@ -58,7 +64,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     });
   };
 
-  // Function to go to the previous slide
+  // Navigate to previous slide
   const goToPrev = () => {
     setIsAutoScrolling(false);
     setCurrentIndex(prevIndex => {
@@ -67,6 +73,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     });
   };
 
+  // Pause auto-scrolling on mouse enter and resume on mouse leave
   const handleMouseEnter = () => {
     setIsAutoScrolling(false);
   };
@@ -75,7 +82,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
     setIsAutoScrolling(true);
   };
 
-  // Calculate the transform value for infinite scroll
+  // Calculate the transform value for slide movement
   const transformValue = -currentIndex * slideWidth;
 
   return (
@@ -89,7 +96,7 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
         className="flex transition-transform duration-500 ease-in-out"
         style={{
           transform: `translateX(${transformValue}px)`,
-          width: `${slideWidth * infiniteRoadmapData.length}px`, // Ensure width accommodates all slides
+          width: `${slideWidth * infiniteRoadmapData.length}px`,
         }}
       >
         {infiniteRoadmapData.map((slide, index) => (
@@ -107,16 +114,16 @@ const RoadmapItTraining = ({ roaadmapData = [] }) => {
                 <Image
                   src={slide.img} alt={slide.title}
                   width={122}
-                  height={2}
+                  height={122}
                 />
               </div>
               <div className='py-2 px-1 xl:px-6'>
                 <strong>{slide.percentage}% Completed</strong>  
               </div> 
               <div>
-                <ul className='text-default-size  ps-6 pt-2'>
-                  {slide.content.map((item, index) => (
-                    <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1' key={index}>
+                <ul className='text-default-size ps-6 pt-2'>
+                  {slide.content.map((item, idx) => (
+                    <li className='bg-list bg-[left_5px] bg-no-repeat ps-8 pb-1' key={idx}>
                       <strong>{item.strong}:</strong> {item.content}
                     </li>
                   ))}
