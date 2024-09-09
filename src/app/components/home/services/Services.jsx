@@ -204,11 +204,11 @@
       <section className='py-12 px-8 xl:px-0  bg-secondary overflow-hidden' >
         <div className='container mx-auto'>
           <SectionHeading subheading="Our Services" heading="Anything tech, Everything tech!" align="text-center" line="mx-auto" /> 
-          <div className="flex flex-col px-6 xl:px-0 mb-6 xl:flex-row xl:space-x-3 justify-center">
+          <div className="flex  px-6 lg:px-0 mb-6  flex-row space-x-3 lg:space-x-3 justify-center">
             {tabsData.map((tab, idx) => (
               <button
                 key={idx}
-                className={`p-4 text-tabs mb-2 transition-colors duration-300 rounded-2xl ${
+                className={`p-2 lg:p-4 lg:text-tabs mb-2 transition-colors duration-300 rounded lg:rounded-2xl ${
                   idx === activeTabIndex
                     ? 'bg-secondarytext-white border-2 border-secondary-dark'
                     : 'bg-white text-primary border-2 border-white'
@@ -219,9 +219,9 @@
               </button>
             ))}
           </div>
-          <div className="flex flex-col px-6 xl:px-0 xl:flex-row xl:space-x-6 justify-center">
+          <div className="flex flex-col lg:px-6 lg:px-0 xl:flex-row xl:space-x-6 justify-center">
             {tabsData[activeTabIndex].subcontent.map((item, idx) => (
-              <div  key={`${activeTabIndex}-${idx}`} className='p-6 bg-white border-2 border-white mb-6 rounded-2xl hover:bg-secondary  hover:border-secondary-dark transition ease-in-out w-full xl:w-1/4 min-h-tabs-content-small'>
+              <div  key={`${activeTabIndex}-${idx}`} className='p-3 lg:p-6 bg-white border-2 border-white mb-6 rounded-2xl hover:bg-secondary  hover:border-secondary-dark transition ease-in-out w-full xl:w-1/4 min-h-tabs-content-small'>
                 <div className='py-6 flex justify-center'>
                   <div  style={{ width: item.width, height: item.height }}>
                     <Image

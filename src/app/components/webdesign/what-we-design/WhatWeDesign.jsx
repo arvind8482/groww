@@ -46,7 +46,7 @@ function WhatWebDesign() {
             className='w-full xl:w-1/2'
             variants={textVariants}
           >
-            <SectionHeading subheading="What we’ll provide" heading="In Web Design" align="text-left " line="mx-none" />
+            <SectionHeading subheading="What we’ll provide In" heading="Web Design" align="text-left " line="mx-none" />
             <motion.p
               className='text-default-size'
               variants={textVariants}
