@@ -37,7 +37,7 @@ function WhatWebDesign() {
           >
             <Image
               src="/images/img-webdeign.svg"
-              width={619}   className='w-full xl:w-5/12 xl:ms-4 '
+              width={619}   className='w-full xl:w-4/5 xl:ms-4 '
               height={368}
               alt=""
             />
