@@ -204,7 +204,7 @@
       <section className='py-12 px-8 xl:px-0  bg-secondary overflow-hidden' >
         <div className='container mx-auto'>
           <SectionHeading subheading="Our Services" heading="Anything tech, Everything tech!" align="text-center" line="mx-auto" /> 
-          <div className="flex  px-6 lg:px-0 mb-6  flex-row space-x-3 lg:space-x-3 justify-center">
+          <div className="flex  px-6 lg:px-0 mb-6 overflow-x-auto xl:overflow-x-hidden  flex-row space-x-3 lg:space-x-3 justify-center">
             {tabsData.map((tab, idx) => (
               <button
                 key={idx}

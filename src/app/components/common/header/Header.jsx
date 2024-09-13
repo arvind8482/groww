@@ -148,7 +148,7 @@ export default function Header() {
       </nav>
       <Dialog open={mobileMenuOpen}   onClose={handleMobileSmallScreen} className="xl:hidden">
         <div className="fixed inset-0 " />
-        <DialogPanel className="fixed z-[99999] overflow-x-hidden inset-y-0 right-0 w-full h-[450px] overflow-y-auto sm:ring-1 sm:ring-gray-900/10 bg-white"> 
+        <DialogPanel className="fixed z-[99999] overflow-x-hidden inset-y-0 right-0 w-full h-full overflow-y-auto sm:ring-1 sm:ring-gray-900/10 bg-white"> 
           <div className="mt-2 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 pt-6 "> 
