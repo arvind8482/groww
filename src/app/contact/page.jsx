@@ -20,7 +20,7 @@ function Page() {
           <div className='flex flex-col xl:flex-row xl:space-x-6'>
             <div className='w-full xl:w-9/12 mb-6 xl:mb-0 slide-up'>
               <div className='shadow-md rounded-2xl p-6 mb-6'>
-                <SectionHeadingTwoLine heading="Get in Touch" line="me-auto" />
+                {/* <SectionHeadingTwoLine heading="Get in Touch" line="me-auto" /> */}
                 <div className='p-6 rounded-xl text-default xl:text-2xl mb-4 text-primary text-center font-semibold flex flex-col justify-center xl:justify-start xl:flex-row xl:space-x-6 items-center bg-gradient-to-r from-gradient-top to-gradient-bottom '>
                   <div>Contact us on WhatsApp</div>
                   <div className='flex flex-col xl:flex-row xl:space-x-6 items-center'>
@@ -42,7 +42,17 @@ function Page() {
                 <p className='text-default text-primary mb-6'>
                   Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours.
                 </p>
-                <ContactForm />
+                <div className='mt-8 slide-up'>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14193.619771897558!2d78.03680536545787!3d27.206433357370376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747096a4ed7593%3A0x47f7f8807dd3bb4d!2sRambagh%2C%20Trans%20Yamuna%20Colony%2C%20Agra%2C%20Uttar%20Pradesh%20282006!5e0!3m2!1sen!2sin!4v1724227124715!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+                {/* <ContactForm /> */}
               </div>
             </div>
             <div className='w-full xl:w-3/12 slide-up'>
@@ -79,16 +89,7 @@ function Page() {
               />
             </div>
           </div>
-          <div className='mt-8 slide-up'>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14193.619771897558!2d78.03680536545787!3d27.206433357370376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747096a4ed7593%3A0x47f7f8807dd3bb4d!2sRambagh%2C%20Trans%20Yamuna%20Colony%2C%20Agra%2C%20Uttar%20Pradesh%20282006!5e0!3m2!1sen!2sin!4v1724227124715!5m2!1sen!2sin"
-              width="100%"
-              height="450"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+       
         </div>
       </section>
     </>
